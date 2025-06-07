@@ -1,0 +1,13 @@
+<script>
+    $(document).ready(function () {
+      $(function () {
+        $(window).on("scroll", function () {
+          if ($(this).scrollTop() > 100 && $('#offer').offset().top - $(this).scrollTop() - $(this).height() > 0) {
+            $('.floating').fadeIn();
+          } else {
+            $('.floating').fadeOut();
+          }
+        });
+      });
+    })
+  </script>

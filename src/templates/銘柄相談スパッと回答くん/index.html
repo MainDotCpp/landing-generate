@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="email=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="flag" content="<%= flag %>">
+  <title>
+    <%= title %>
+  </title>
+  <script src="./static/jquery-3.7.1.min.js"></script>
+  <script th:replace="~{public/head}">
+    const onLinkBtnClick = () => {
+      const link = ""
+      try { gtag_report_conversion(); } catch (error) { console.log(error) } finally { window.location.href = link; }
+    }
+  </script>
+</head>
+
+<body>
+  <div id="<%= mountElementId %>"></div>
+  <script>
+    function gofun() {
+      $('#popup1').show();
+    }
+    $(document).ready(function () {
+      $("#cancel-button,.close-popup").click(function () {
+        $('#popup1').hide();
+      });
+    });
+  </script>
+</body>
+
+</html>

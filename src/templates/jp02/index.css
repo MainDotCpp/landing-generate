@@ -1,0 +1,1427 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0;
+    word-wrap: break-word
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+a {
+    background-color: transparent
+}
+
+a:active,
+a:hover {
+    outline: 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b,
+strong {
+    font-weight: 700
+}
+
+dfn {
+    font-style: italic
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 0
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0
+}
+
+pre {
+    overflow: auto
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+button {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html input[type="button"],
+/* 1 */
+body {
+    font-size: 17px;
+    background-color: #F4F4F4;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none
+}
+
+@media screen and (min-width: 920px) {
+    body {
+        width: 620px;
+        margin: 0 auto
+    }
+}
+
+body .article-header-wrapper img {
+    max-width: 100%
+}
+
+body .article-body {
+    position: relative;
+    font-size: 17px;
+    line-height: 1.8;
+    padding: 15px 20px;
+    background-color: #ffffff
+}
+
+body .article-body span,
+body .article-body p,
+body .article-body div,
+body .article-body h1,
+body .article-body h2,
+body .article-body h3,
+body .article-body h4,
+body .article-body h5,
+body .article-body h6 {
+    max-width: 100%
+}
+
+body .article-body .sb-font-bold {
+    font-weight: bold
+}
+
+body .article-body .sb-color-black {
+    color: #000
+}
+
+body .article-body .sb-color-red {
+    color: #ff0000
+}
+
+body .article-body .sb-color-blue {
+    color: #0000ff
+}
+
+body .article-body .sb-align-left {
+    display: block;
+    text-align: left
+}
+
+body .article-body .sb-align-center {
+    display: block;
+    text-align: center
+}
+
+body .article-body .sb-align-right {
+    display: block;
+    text-align: right
+}
+
+body .article-body .sb-bg-gray {
+    background: linear-gradient(to right, #eee 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    background: -webkit-linear-gradient(left, #eee 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    transition: background-position 1s ease-out;
+    -webkit-transition: background-position 1s ease-out;
+    background-position: bottom 0 right 100%
+}
+
+body .article-body .sb-bg-white {
+    background: linear-gradient(to right, #fff 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    background: -webkit-linear-gradient(left, #fff 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    transition: background-position 1s ease-out;
+    -webkit-transition: background-position 1s ease-out;
+    background-position: bottom 0 right 100%
+}
+
+body .article-body .sb-bg-black {
+    background: linear-gradient(to right, #000 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    background: -webkit-linear-gradient(left, #000 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    transition: background-position 1s ease-out;
+    -webkit-transition: background-position 1s ease-out;
+    background-position: bottom 0 right 100%
+}
+
+body .article-body .sb-bg-red {
+    background: linear-gradient(to right, red 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    background: -webkit-linear-gradient(left, red 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    transition: background-position 1s ease-out;
+    -webkit-transition: background-position 1s ease-out;
+    background-position: bottom 0 right 100%
+}
+
+body .article-body .sb-bg-green {
+    background: linear-gradient(to right, lime 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    background: -webkit-linear-gradient(left, lime 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    transition: background-position 1s ease-out;
+    -webkit-transition: background-position 1s ease-out;
+    background-position: bottom 0 right 100%
+}
+
+body .article-body .sb-bg-yellow {
+    background: linear-gradient(to right, #ffee57 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    background: -webkit-linear-gradient(left, #ffee57 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    transition: background-position 1s ease-out;
+    -webkit-transition: background-position 1s ease-out;
+    background-position: bottom 0 right 100%
+}
+
+body .article-body .sb-bg-blue {
+    background: linear-gradient(to right, blue 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    background: -webkit-linear-gradient(left, blue 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    transition: background-position 1s ease-out;
+    -webkit-transition: background-position 1s ease-out;
+    background-position: bottom 0 right 100%
+}
+
+body .article-body .sb-fs-10 {
+    font-size: 10px
+}
+
+body .article-body .sb-fs-13 {
+    font-size: 13px
+}
+
+body .article-body .sb-fs-15 {
+    font-size: 15px
+}
+
+body .article-body .sb-fs-17 {
+    font-size: 17px
+}
+
+body .article-body .sb-fs-19 {
+    font-size: 19px
+}
+
+body .article-body .sb-fs-21 {
+    font-size: 21px
+}
+
+body .article-body .sb-fs-23 {
+    font-size: 23px
+}
+
+body .article-body .sb-fs-25 {
+    font-size: 25px
+}
+
+body .article-body .sb-fs-27 {
+    font-size: 27px
+}
+
+body .article-body .sb-fs-29 {
+    font-size: 29px
+}
+
+body .article-body h2 {
+    font-size: 27px;
+    margin: 0
+}
+
+body .article-body p {
+    margin: 0
+}
+
+body .article-body a {
+    text-decoration: underline;
+    color: #4682b4
+}
+
+body .article-body iframe {
+    display: block;
+    max-width: 100%;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important
+}
+
+body .article-body video {
+    display: block;
+    max-width: 100%;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important
+}
+
+body .article-body video:not(.lazyload) {
+    height: auto !important
+}
+
+body .article-body img:not(.lazyload) {
+    height: auto !important
+}
+
+body .article-body img {
+    display: block;
+    max-width: 100%;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important
+}
+
+body .article-body img.sb-fl {
+    float: left;
+    margin-right: 10px
+}
+
+body .article-body img.sb-fc {
+    display: block;
+    float: none;
+    margin: 0 auto
+}
+
+body .article-body img.sb-fr {
+    float: right;
+    margin-left: 10px
+}
+
+body .article-body img.sb-img-move-side {
+    animation: sb_img_move_side 1s ease-in-out infinite alternate !important
+}
+
+@keyframes sb_img_move_side {
+    0% {
+        transform: translateX(-5px)
+    }
+
+    100% {
+        transform: translateX(5px)
+    }
+}
+
+body .article-body .sb-bg-gum-marker,
+body .article-body .sb-bg-gum-marker-animated {
+    background: linear-gradient(to right, #ffee57 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    background: -webkit-linear-gradient(left, #ffee57 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    transition: background-position 1s ease-out;
+    -webkit-transition: background-position 1s ease-out
+}
+
+body .article-body .sb-bg-gum-marker.animated,
+body .article-body .sb-bg-gum-marker-animated.animated {
+    background-position: bottom 0 right 100% !important
+}
+
+body .article-body .sb-bg-gum-marker.sb-bg-gray,
+body .article-body .sb-bg-gum-marker-animated.sb-bg-gray {
+    background: linear-gradient(to right, #eee 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    background: -webkit-linear-gradient(left, #eee 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    transition: background-position 1s ease-out;
+    -webkit-transition: background-position 1s ease-out
+}
+
+body .article-body .sb-bg-gum-marker.sb-bg-gray.animated,
+body .article-body .sb-bg-gum-marker-animated.sb-bg-gray.animated {
+    background-position: bottom 0 right 100%
+}
+
+body .article-body .sb-bg-gum-marker.sb-bg-white,
+body .article-body .sb-bg-gum-marker-animated.sb-bg-white {
+    background: linear-gradient(to right, #fff 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    background: -webkit-linear-gradient(left, #fff 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    transition: background-position 1s ease-out;
+    -webkit-transition: background-position 1s ease-out
+}
+
+body .article-body .sb-bg-gum-marker.sb-bg-white.animated,
+body .article-body .sb-bg-gum-marker-animated.sb-bg-white.animated {
+    background-position: bottom 0 right 100%
+}
+
+body .article-body .sb-bg-gum-marker.sb-bg-black,
+body .article-body .sb-bg-gum-marker-animated.sb-bg-black {
+    background: linear-gradient(to right, #000 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    background: -webkit-linear-gradient(left, #000 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    transition: background-position 1s ease-out;
+    -webkit-transition: background-position 1s ease-out
+}
+
+body .article-body .sb-bg-gum-marker.sb-bg-black.animated,
+body .article-body .sb-bg-gum-marker-animated.sb-bg-black.animated {
+    background-position: bottom 0 right 100%
+}
+
+body .article-body .sb-bg-gum-marker.sb-bg-red,
+body .article-body .sb-bg-gum-marker-animated.sb-bg-red {
+    background: linear-gradient(to right, red 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    background: -webkit-linear-gradient(left, red 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    transition: background-position 1s ease-out;
+    -webkit-transition: background-position 1s ease-out
+}
+
+body .article-body .sb-bg-gum-marker.sb-bg-red.animated,
+body .article-body .sb-bg-gum-marker-animated.sb-bg-red.animated {
+    background-position: bottom 0 right 100%
+}
+
+body .article-body .sb-bg-gum-marker.sb-bg-green,
+body .article-body .sb-bg-gum-marker-animated.sb-bg-green {
+    background: linear-gradient(to right, lime 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    background: -webkit-linear-gradient(left, lime 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    transition: background-position 1s ease-out;
+    -webkit-transition: background-position 1s ease-out
+}
+
+body .article-body .sb-bg-gum-marker.sb-bg-green.animated,
+body .article-body .sb-bg-gum-marker-animated.sb-bg-green.animated {
+    background-position: bottom 0 right 100%
+}
+
+body .article-body .sb-bg-gum-marker.sb-bg-yellow,
+body .article-body .sb-bg-gum-marker-animated.sb-bg-yellow {
+    background: linear-gradient(to right, #ffee57 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    background: -webkit-linear-gradient(left, #ffee57 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    transition: background-position 1s ease-out;
+    -webkit-transition: background-position 1s ease-out
+}
+
+body .article-body .sb-bg-gum-marker.sb-bg-yellow.animated,
+body .article-body .sb-bg-gum-marker-animated.sb-bg-yellow.animated {
+    background-position: bottom 0 right 100%
+}
+
+body .article-body .sb-bg-gum-marker.sb-bg-blue,
+body .article-body .sb-bg-gum-marker-animated.sb-bg-blue {
+    background: linear-gradient(to right, blue 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    background: -webkit-linear-gradient(left, blue 50%, transparent 50%) 100% 0%/200% 70% no-repeat;
+    transition: background-position 1s ease-out;
+    -webkit-transition: background-position 1s ease-out
+}
+
+body .article-body .sb-bg-gum-marker.sb-bg-blue.animated,
+body .article-body .sb-bg-gum-marker-animated.sb-bg-blue.animated {
+    background-position: bottom 0 right 100%
+}
+
+body .article-body .article-body-comment {
+    display: table;
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+    width: 100% !important;
+    max-width: 100% !important
+}
+
+body .article-body .article-body-comment .comment-image,
+body .article-body .article-body-comment .comment-content {
+    display: table-cell;
+    vertical-align: top
+}
+
+body .article-body .article-body-comment .comment-image {
+    padding-right: 1em
+}
+
+body .article-body .article-body-comment .comment-image>img {
+    display: block;
+    height: auto;
+    max-width: none;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important
+}
+
+body .article-body .article-body-comment .comment-content {
+    width: 100%
+}
+
+body .article-body .article-body-comment .comment-content .comment-title {
+    font-size: 1em;
+    margin: 0 0 0.5em 0;
+    font-weight: bold
+}
+
+body .article-body .article-body-comment .comment-content p {
+    line-height: 1.5em;
+    margin-bottom: 0.5em
+}
+
+body .article-body .article-body-comment .comment-content p.comment-detail {
+    color: rgba(51, 51, 51, 0.5);
+    font-size: 0.9em;
+    font-style: italic
+}
+
+body .article-body .sb-custom img {
+    display: block !important
+}
+
+body .article-body .sb-form iframe {
+    height: 0;
+    margin: 0 auto !important
+}
+
+body {}
+
+
+
+
+.article-body {
+
+    font-size: 17px !important;
+
+
+    font-family: Hiragino Sans, Arial, sans-serif !important;
+
+
+    color: #000000 !important;
+
+
+    line-height: 1.8 !important;
+
+
+
+    padding-top: 15px !important;
+
+
+    padding-bottom: 15px !important;
+
+
+    padding-left: 20px !important;
+
+
+    padding-right: 20px !important;
+
+
+
+
+}
+
+body .article-body iframe {}
+
+body .article-body img {
+    display: unset !important;
+
+    margin-top: 0px !important;
+
+
+    margin-bottom: 0px !important;
+
+}
+
+body .article-body video {
+    display: unset !important;
+}
+
+body .article-body .sb-custom {
+
+    font-size: 17px !important;
+
+
+    font-family: Hiragino Sans, Arial, sans-serif !important;
+
+
+    color: #000000 !important;
+
+
+    line-height: 1.8 !important;
+
+}
+
+body .article-body .sb-custom img {
+
+    margin-top: 0px !important;
+
+
+    margin-bottom: 0px !important;
+
+}
+
+
+#sb-part-11909.sb-custom-part-m79ti7nwnp4ffqwbdlg .main {
+    margin: -0px -10px -25px -10px !important;
+    /*-20pxはversion設定の左右余白を変更していない場合のみです、左右余白と同じサイズを-(マイナス)で打ち消してください*/
+    max-width: unset;
+}
+
+#sb-part-11909.sb-custom-part-m79ti7nwnp4ffqwbdlg img,
+#sb-part-11909.sb-custom-part-m79ti7nwnp4ffqwbdlg video {
+    width: 100%;
+}
+
+#sb-part-10988.sb-custom-part-lma37l392mf8jwjszc6
+
+/* アニメーション設定
+----------------------------------------- */
+.c-img01 {
+    /* 画像切替 スピード(n秒かけて切替) */
+    animation-duration: 3s;
+}
+
+#sb-part-10988.sb-custom-part-lma37l392mf8jwjszc6 .c-img01__item.is-active {
+    /* 画像の消えていくスピード(n秒かけて消える) */
+    transition-duration: 0.5s;
+}
+
+#sb-part-10988.sb-custom-part-lma37l392mf8jwjszc6
+
+/* 基本設定
+----------------------------------------- */
+.c-img01,
+#sb-part-10988.sb-custom-part-lma37l392mf8jwjszc6 .c-img01 * {
+    box-sizing: border-box;
+}
+
+#sb-part-10988.sb-custom-part-lma37l392mf8jwjszc6 .c-img01,
+#sb-part-10988.sb-custom-part-lma37l392mf8jwjszc6 .c-img01__item {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#sb-part-10988.sb-custom-part-lma37l392mf8jwjszc6 .c-img01.active .c-img01__item {
+    opacity: 0;
+}
+
+#sb-part-10988.sb-custom-part-lma37l392mf8jwjszc6 .c-img01:not(.active) .c-img01__item:first-of-type {
+    opacity: 1;
+}
+
+#sb-part-10988.sb-custom-part-lma37l392mf8jwjszc6 .c-img01 img {
+    display: block;
+}
+
+#sb-part-10988.sb-custom-part-lma37l392mf8jwjszc6 .c-img01 .c-img01__item:not(:first-of-type) {
+    position: absolute;
+    translate: -50% -50%;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+#sb-part-10988.sb-custom-part-lma37l392mf8jwjszc6 .c-img01.active .c-img01__item.is-active {
+    transition-property: opacity;
+    opacity: 1;
+}
+
+#sb-part-10988.sb-custom-part-lma37l392mf8jwjszc6
+
+/* 管理画面等 表示用
+----------------------------------------- */
+.c-img01:not(.active) .c-img01__item:not(:first-of-type) {
+    opacity: 0;
+}
+
+#sb-part-10988.sb-custom-part-lma37l392mf8jwjszc6 div.htmlValue>.c-img01 .c-img01__item:not(:first-of-type) {
+    position: relative;
+    translate: 0 0;
+    top: auto;
+    left: auto;
+    width: auto;
+    height: auto;
+    opacity: 1;
+}
+
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q
+
+/* 詳細設定
+----------------------------------------- */
+.balloon {
+    /* 画像周りの余白の調整 上下｜左右 */
+    margin: 1em 0;
+}
+
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q
+
+/* アイコンの詳細設定
+----------------------------------------- */
+.faceicon,
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q .faceicon picture,
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q .faceicon img {
+    /* アイコンのサイズ */
+    min-width: 70px;
+}
+
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q .name {
+    /* アイコン名の文字色 */
+    color: #808080;
+
+    /* アイコン名の文字サイズ */
+    font-size: 11px;
+}
+
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q
+
+/* 吹き出しの詳細設定
+----------------------------------------- */
+.chatting {
+    /* 吹き出しの表示位置 ※上に表示したい場合は"start" */
+    align-self: center;
+
+    /* 吹き出しの表示調整 数字を増やすと上に移動 */
+    padding-bottom: 20px;
+}
+
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q .says,
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q .says:before {
+    /* 吹き出しの色 */
+    background-color: #f5df4e;
+}
+
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q .says {
+    /* 吹き出し内の余白 */
+    padding: 12px 20px;
+
+    /* 吹き出しとアイコンの間の余白 */
+    margin-left: 14px;
+
+    /* 吹き出しの角丸 */
+    border-radius: 10pt;
+}
+
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q .says:before {
+    /* 吹き出しの先の位置 縦方向 */
+    top: 12px;
+
+    /* 吹き出しの先のサイズ 横幅 */
+    width: 18px;
+
+    /* 吹き出しの先のサイズ 横幅 */
+    height: 28px;
+}
+
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q .balloon {
+    overflow: hidden;
+    display: flex;
+}
+
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q .chatting {
+    width: auto;
+}
+
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q .faceicon {
+    position: relative;
+    flex-shrink: 0;
+    height: auto;
+    overflow: hidden;
+}
+
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q .faceicon picture,
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q .faceicon img {
+    display: block;
+}
+
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q .name {
+    text-align: center;
+}
+
+@media not screen and (max-width: 600px) {
+    #sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q .sp {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q .pc {
+        display: none !important;
+    }
+}
+
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q
+
+/*230804吹き出しデザイン別バージョン作成*/
+.balloon-008 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 600px;
+    margin-left: 10px;
+    padding: .9em 1em;
+    border: 3px solid #bdbdbd;
+    border-radius: 130px;
+    background-color: #fff;
+    color: #333333;
+}
+
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q .balloon-008::before,
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q .balloon-008::after {
+    position: absolute;
+    left: -15px;
+    width: 14px;
+    height: 20px;
+    clip-path: polygon(0 45%, 100% 0, 100% 100%);
+    content: '';
+}
+
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q .balloon-008::before {
+    background-color: #bdbdbd;
+}
+
+#sb-part-10694.sb-custom-part-lm7k0ckyne7zf66d89q .balloon-008::after {
+    left: -10px;
+    background-color: #fff;
+}
+
+#sb-part-10988.sb-custom-part-lma3hye6nsqctg782ym
+
+/* アニメーション設定
+----------------------------------------- */
+.c-img01 {
+    /* 画像切替 スピード(n秒かけて切替) */
+    animation-duration: 2.2s;
+}
+
+#sb-part-10988.sb-custom-part-lma3hye6nsqctg782ym .c-img01__item.is-active {
+    /* 画像の消えていくスピード(n秒かけて消える) */
+    transition-duration: 0.5s;
+}
+
+#sb-part-10988.sb-custom-part-lma3hye6nsqctg782ym
+
+/* 基本設定
+----------------------------------------- */
+.c-img01,
+#sb-part-10988.sb-custom-part-lma3hye6nsqctg782ym .c-img01 * {
+    box-sizing: border-box;
+}
+
+#sb-part-10988.sb-custom-part-lma3hye6nsqctg782ym .c-img01,
+#sb-part-10988.sb-custom-part-lma3hye6nsqctg782ym .c-img01__item {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#sb-part-10988.sb-custom-part-lma3hye6nsqctg782ym .c-img01.active .c-img01__item {
+    opacity: 0;
+}
+
+#sb-part-10988.sb-custom-part-lma3hye6nsqctg782ym .c-img01:not(.active) .c-img01__item:first-of-type {
+    opacity: 1;
+}
+
+#sb-part-10988.sb-custom-part-lma3hye6nsqctg782ym .c-img01 img {
+    display: block;
+}
+
+#sb-part-10988.sb-custom-part-lma3hye6nsqctg782ym .c-img01 .c-img01__item:not(:first-of-type) {
+    position: absolute;
+    translate: -50% -50%;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+#sb-part-10988.sb-custom-part-lma3hye6nsqctg782ym .c-img01.active .c-img01__item.is-active {
+    transition-property: opacity;
+    opacity: 1;
+}
+
+#sb-part-10988.sb-custom-part-lma3hye6nsqctg782ym
+
+/* 管理画面等 表示用
+----------------------------------------- */
+.c-img01:not(.active) .c-img01__item:not(:first-of-type) {
+    opacity: 0;
+}
+
+#sb-part-10988.sb-custom-part-lma3hye6nsqctg782ym div.htmlValue>.c-img01 .c-img01__item:not(:first-of-type) {
+    position: relative;
+    translate: 0 0;
+    top: auto;
+    left: auto;
+    width: auto;
+    height: auto;
+    opacity: 1;
+}
+
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr
+
+/* 詳細設定
+----------------------------------------- */
+.balloon {
+    /* 画像周りの余白の調整 上下｜左右 */
+    margin: 1em 0;
+}
+
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr
+
+/* アイコンの詳細設定
+----------------------------------------- */
+.faceicon,
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr .faceicon picture,
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr .faceicon img {
+    /* アイコンのサイズ */
+    min-width: 70px;
+}
+
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr .name {
+    /* アイコン名の文字色 */
+    color: #808080;
+
+    /* アイコン名の文字サイズ */
+    font-size: 11px;
+}
+
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr
+
+/* 吹き出しの詳細設定
+----------------------------------------- */
+.chatting {
+    /* 吹き出しの表示位置 ※上に表示したい場合は"start" */
+    align-self: center;
+
+    /* 吹き出しの表示調整 数字を増やすと上に移動 */
+    padding-bottom: 20px;
+}
+
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr .says,
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr .says:before {
+    /* 吹き出しの色 */
+    background-color: #f5df4e;
+}
+
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr .says {
+    /* 吹き出し内の余白 */
+    padding: 12px 20px;
+
+    /* 吹き出しとアイコンの間の余白 */
+    margin-left: 14px;
+
+    /* 吹き出しの角丸 */
+    border-radius: 10pt;
+}
+
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr .says:before {
+    /* 吹き出しの先の位置 縦方向 */
+    top: 12px;
+
+    /* 吹き出しの先のサイズ 横幅 */
+    width: 18px;
+
+    /* 吹き出しの先のサイズ 横幅 */
+    height: 28px;
+}
+
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr .balloon {
+    overflow: hidden;
+    display: flex;
+}
+
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr .chatting {
+    width: auto;
+}
+
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr .faceicon {
+    position: relative;
+    flex-shrink: 0;
+    height: auto;
+    overflow: hidden;
+}
+
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr .faceicon picture,
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr .faceicon img {
+    display: block;
+}
+
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr .name {
+    text-align: center;
+}
+
+@media not screen and (max-width: 600px) {
+    #sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr .sp {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr .pc {
+        display: none !important;
+    }
+}
+
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr
+
+/*230804吹き出しデザイン別バージョン作成*/
+.balloon-008 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 600px;
+    margin-left: 10px;
+    padding: .9em 1em;
+    border: 3px solid #bdbdbd;
+    border-radius: 130px;
+    background-color: #fff;
+    color: #333333;
+}
+
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr .balloon-008::before,
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr .balloon-008::after {
+    position: absolute;
+    left: -15px;
+    width: 14px;
+    height: 20px;
+    clip-path: polygon(0 45%, 100% 0, 100% 100%);
+    content: '';
+}
+
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr .balloon-008::before {
+    background-color: #bdbdbd;
+}
+
+#sb-part-10694.sb-custom-part-lm7jz6oxsj94pqbltr .balloon-008::after {
+    left: -10px;
+    background-color: #fff;
+}
+
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p
+
+/* 詳細設定
+----------------------------------------- */
+.balloon {
+    /* 画像周りの余白の調整 上下｜左右 */
+    margin: 1em 0;
+}
+
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p
+
+/* アイコンの詳細設定
+----------------------------------------- */
+.faceicon,
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p .faceicon picture,
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p .faceicon img {
+    /* アイコンのサイズ */
+    min-width: 70px;
+}
+
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p .name {
+    /* アイコン名の文字色 */
+    color: #808080;
+
+    /* アイコン名の文字サイズ */
+    font-size: 11px;
+}
+
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p
+
+/* 吹き出しの詳細設定
+----------------------------------------- */
+.chatting {
+    /* 吹き出しの表示位置 ※上に表示したい場合は"start" */
+    align-self: center;
+
+    /* 吹き出しの表示調整 数字を増やすと上に移動 */
+    padding-bottom: 20px;
+}
+
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p .says,
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p .says:before {
+    /* 吹き出しの色 */
+    background-color: #f5df4e;
+}
+
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p .says {
+    /* 吹き出し内の余白 */
+    padding: 12px 20px;
+
+    /* 吹き出しとアイコンの間の余白 */
+    margin-left: 14px;
+
+    /* 吹き出しの角丸 */
+    border-radius: 10pt;
+}
+
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p .says:before {
+    /* 吹き出しの先の位置 縦方向 */
+    top: 12px;
+
+    /* 吹き出しの先のサイズ 横幅 */
+    width: 18px;
+
+    /* 吹き出しの先のサイズ 横幅 */
+    height: 28px;
+}
+
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p .balloon {
+    overflow: hidden;
+    display: flex;
+}
+
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p .chatting {
+    width: auto;
+}
+
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p .faceicon {
+    position: relative;
+    flex-shrink: 0;
+    height: auto;
+    overflow: hidden;
+}
+
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p .faceicon picture,
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p .faceicon img {
+    display: block;
+}
+
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p .name {
+    text-align: center;
+}
+
+@media not screen and (max-width: 600px) {
+    #sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p .sp {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p .pc {
+        display: none !important;
+    }
+}
+
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p
+
+/*230804吹き出しデザイン別バージョン作成*/
+.balloon-008 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 600px;
+    margin-left: 10px;
+    padding: .9em 1em;
+    border: 3px solid #bdbdbd;
+    border-radius: 130px;
+    background-color: #fff;
+    color: #333333;
+}
+
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p .balloon-008::before,
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p .balloon-008::after {
+    position: absolute;
+    left: -15px;
+    width: 14px;
+    height: 20px;
+    clip-path: polygon(0 45%, 100% 0, 100% 100%);
+    content: '';
+}
+
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p .balloon-008::before {
+    background-color: #bdbdbd;
+}
+
+#sb-part-10694.sb-custom-part-lm7jy8u8ktfkmrod2p .balloon-008::after {
+    left: -10px;
+    background-color: #fff;
+}
+
+#sb-part-20.sb-custom-part-lma4jwq1qmgrqz74de9 .buruburu {
+    display: inline-block;
+    /*アニメーション名、動きの速さ1s（=1秒）、動く回数infinite(=無限)*/
+    animation: hurueru 2s infinite;
+}
+
+@keyframes hurueru {
+
+    /*アニメーションの最初*/
+    0% {
+        /*translate1番目の値はX軸、2番目の値はY軸
+　　　　rotateZはZ軸*/
+        transform: translate(0px, 0px) rotateZ(0deg);
+    }
+
+    25% {
+        transform: translate(1px, 0px) rotateZ(1.5deg);
+    }
+
+    30% {
+        transform: translate(1px, 0px) rotateZ(-1.5deg);
+    }
+
+    35% {
+        transform: translate(1px, 0px) rotateZ(1.5deg);
+    }
+
+    40% {
+        transform: translate(1px, 0px) rotateZ(-1.5deg);
+    }
+
+    75% {
+        transform: translate(0px, 0px) rotateZ(-0deg);
+    }
+
+    /*アニメーションの最後*/
+    100% {
+        transform: translate(0px, 0px) rotateZ(0deg);
+    }
+}
+
+#sb-part-2517.sb-custom-part-lm8jwxtg799rsrhlia9 * {
+    -webkit-appearance: none;
+}
+
+#sb-part-2517.sb-custom-part-lm8jwxtg799rsrhlia9 .fb {
+    background: #fff;
+    margin: 0px auto;
+}
+
+#sb-part-2517.sb-custom-part-lm8jwxtg799rsrhlia9 .fb h2 {
+    background: #2b3ba3;
+    margin: 0 auto 10px;
+    padding: 5px 15px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#sb-part-2517.sb-custom-part-lm8jwxtg799rsrhlia9 .fb_box {
+    padding: 5px 7px;
+    margin: 5px;
+    border-bottom: 1px solid #d3d6db;
+}
+
+#sb-part-2517.sb-custom-part-lm8jwxtg799rsrhlia9 .fb_icon {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+#sb-part-2517.sb-custom-part-lm8jwxtg799rsrhlia9 .fb_icon img {
+    border-radius: 50%;
+
+}
+
+#sb-part-2517.sb-custom-part-lm8jwxtg799rsrhlia9 .fb_name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #2b3ba3;
+    line-height: 1.4;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+}
+
+#sb-part-2517.sb-custom-part-lm8jwxtg799rsrhlia9 .fb_com {
+    display: block;
+    font-size: 14px;
+    margin: 7px 0;
+    line-height: 1.6;
+    text-align: justify;
+
+
+}
+
+#sb-part-2517.sb-custom-part-lm8jwxtg799rsrhlia9 .fb_time {
+    font-size: 14px;
+    color: #90949c;
+}
+
+#sb-part-2517.sb-custom-part-lm8jwxtg799rsrhlia9 .br-sp {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #sb-part-2517.sb-custom-part-lm8jwxtg799rsrhlia9 .br-sp {
+        display: block;
+    }
+}
+
+#sb-part-20.sb-custom-part-lma4k2nncbzws7pnqe .buruburu {
+    display: inline-block;
+    /*アニメーション名、動きの速さ1s（=1秒）、動く回数infinite(=無限)*/
+    animation: hurueru 2s infinite;
+}
+
+@keyframes hurueru {
+
+    /*アニメーションの最初*/
+    0% {
+        /*translate1番目の値はX軸、2番目の値はY軸
+                                    　　　　rotateZはZ軸*/
+        transform: translate(0px, 0px) rotateZ(0deg);
+    }
+
+    25% {
+        transform: translate(1px, 0px) rotateZ(1.5deg);
+    }
+
+    30% {
+        transform: translate(1px, 0px) rotateZ(-1.5deg);
+    }
+
+    35% {
+        transform: translate(1px, 0px) rotateZ(1.5deg);
+    }
+
+    40% {
+        transform: translate(1px, 0px) rotateZ(-1.5deg);
+    }
+
+    75% {
+        transform: translate(0px, 0px) rotateZ(-0deg);
+    }
+
+    /*アニメーションの最後*/
+    100% {
+        transform: translate(0px, 0px) rotateZ(0deg);
+    }
+}
+
+.floating {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background-color: rgb(65 170 70);
+    display: none;
+    padding: 5px 0;
+}
+
+.float_in {
+    max-width: 980px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 0px 0 5px;
+    position: relative;
+}
+
+.floating a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.floating img {
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.3);
+}
+
+.floating a:hover {
+    opacity: 1;
+}
+
+.fl_box {
+    padding: 27px 143px 20px 0;
+    text-align: right;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
