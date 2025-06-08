@@ -1,3 +1,4 @@
+import { redirect } from '@/utils/redicrect'
 import defaultSchoolImage from './static/2c9f2e41/static/picture/6336dae9-ba07-43fe-afc1-9ba86fc60eab.jpg'
 import ctaButtonImage from './static/2c9f2e41/static/picture/7839a379-d188-483d-b151-5e575490b0a9.png'
 import floatingButtonImage from './static/2c9f2e41/static/picture/button.png'
@@ -703,7 +704,7 @@ function Page({
                       type="image/avif"
                       data-srcset="uploads/article_photo/photo/2998327/7839a379-d188-483d-b151-5e575490b0a9.avif"
                     />
-                    <a href="javascript:{onLinkBtnClick()}">
+                    <a onClick={redirect}>
                       <img
                         src={ctaButtonImage}
                         width={570}
@@ -886,7 +887,7 @@ function Page({
                       type="image/avif"
                       data-srcset="uploads/article_photo/photo/2998327/7839a379-d188-483d-b151-5e575490b0a9.avif"
                     />
-                    <a href="javascript:{onLinkBtnClick()}">
+                    <a onClick={redirect}>
                       <img
                         src={ctaButtonImage}
                         width={570}
@@ -913,13 +914,13 @@ function Page({
           <br />
         </div>
       </div>
-      <a href="javascript:{onLinkBtnClick()}" name="offer" id="offer" />
+      <a onClick={redirect} name="offer" id="offer" />
 
       <div className="Bnr">
         <div className="floating">
           <div className="float_in clearfix">
             <div className="fl_box">
-              <a href="javascript:{onLinkBtnClick()}">
+              <a onClick={redirect}>
                 <img
                   src={floatingButtonImage}
                   //

@@ -1,5 +1,6 @@
 import { configResponsive, useResponsive } from 'ahooks'
 import React from 'react'
+import { redirect } from '@/utils/redicrect'
 import a1Png from './static/A1.png'
 import a2Png from './static/A2.png'
 import a3Png from './static/A3.png'
@@ -99,7 +100,7 @@ function Page({
           <br />
           <p />
           <div className="popup-buttons">
-            <a href="javascript:{onLinkBtnClick()}" id="confirm-button">友だち追加</a>
+            <a onClick={redirect} id="confirm-button">友だち追加</a>
             <button id="cancel-button" style={{ float: 'right' }}>
               放棄
             </button>

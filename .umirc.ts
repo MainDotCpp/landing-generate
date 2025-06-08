@@ -11,6 +11,7 @@ export default defineConfig({
   mpa: {
     template: 'index.html',
     getConfigFromEntryFile: true,
+    layout: '@/layouts/index.tsx',
   },
   copy: [],
   tailwindcss: {},

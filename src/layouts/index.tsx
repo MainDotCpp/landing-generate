@@ -1,21 +1,18 @@
-import { Link, Outlet } from 'umi'
-import styles from './index.less'
+import ReactGA from 'react-ga4'
+import './index.less'
 
-export default function Layout() {
+ReactGA.initialize([
+  {
+    trackingId: 'G-4W2QRS0ZM2',
+  },
+])
+
+ReactGA.send({ hitType: 'pageview', hostname: document.location.hostname })
+
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className={styles.navs}>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/docs">Docs</Link>
-        </li>
-        <li>
-          <a href="https://github.com/umijs/umi">Github</a>
-        </li>
-      </ul>
-      <Outlet />
-    </div>
+    <>
+      { children }
+    </>
   )
 }
