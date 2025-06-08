@@ -1,8 +1,24 @@
 {
-  "www/wealthpro.top": {
-    "description": "S"
-  },
-  "www/cryptowiz.top": {
-    "description": "shuai"
-  }
+  "www/wealthpro.top": { "description": "S" },
+  "www/cryptowiz.top": { "description": "shuai" },
+  "www/investdeal.top": { "description": "-NO CDN" },
+  "www/fastwealth.top": { "description": "-NO CDN" },
+  "www/richstream.top": { "description": "-NO CDN" },
+  "www/profitace.top": { "description": "-NO CDN" },
+  "www/financeup.top": { "description": "-NO CDN" },
+  "www/investflex.top": { "description": "-" },
+  "www/wealthtrust.top": { "description": "-" },
+  "www/stocksage.top": { "description": "-" },
+  "www/moneyhunt.top": { "description": "-" },
+  "www/gainpro.top": { "description": "-" },
+  "www/wealthvip.top": { "description": "-" },
+  "www/profitlink.top": { "description": "-" },
+  "www/financemate.top": { "description": "-" },
+  "www/wealthzone.top": { "description": "-" },
+  "www/moneyflex.top": { "description": "-" },
+  "www/investking.top": { "description": "-" },
+  "www/richboost.top": { "description": "-" },
+  "www/wealthace.top": { "description": "-" },
+  "www/financemax.top": { "description": "-" },
+  "www/moneywise.top": { "description": "-" }
 }
