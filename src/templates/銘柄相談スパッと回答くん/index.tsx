@@ -1,9 +1,9 @@
+import { configResponsive, useResponsive } from 'ahooks'
 import React from 'react'
 import a1Png from './static/A1.png'
 import a2Png from './static/A2.png'
 import a3Png from './static/A3.png'
 import a4Png from './static/A4.png'
-import about02Img01Png from './static/about02_img01.png'
 import aidd4Png from './static/AIDD4.png'
 import arrow01Png from './static/arrow01.png'
 import btn1Png from './static/BTN1.png'
@@ -38,7 +38,37 @@ import './static/style.min.css'
 import './static/common.css'
 import './static/main.css'
 
-function Page() {
+interface PageProps {
+  personName?: string
+  a5Png?: string
+  mvBgPcPng?: string
+  about02Img01Png?: string
+  // 人物介绍相关
+  personTitle?: string
+  personDescription?: string
+  analystInfo?: string
+  companyIntro?: string
+  howToUseAnswer?: string
+}
+
+configResponsive({
+  mobile: 0,
+  pc: 800,
+})
+
+function Page({
+  personName = '高橋洋一',
+  a5Png,
+  mvBgPcPng,
+  about02Img01Png,
+  // 人物介绍相关
+  personTitle = '株マイスターについて',
+  personDescription = '株マイスターは銘柄相談件数１０万件以上を誇る老舗投資顧問',
+  analystInfo = 'より具体的なご質問については、LINE上でお送りいただければ、弊社アナリストがご回答させていただきます。',
+  companyIntro = '【銘柄相談スパッと回答くん】では銘柄の概要や市場動向だけでなく、これまでの知見を元に株価分析を含めた売買のアドバイスまでさせていただきます。',
+  howToUseAnswer = 'LINEで友だち追加していただき、「2024年急騰株」とメッセージを送っていただければ、無料でご利用いただけます！',
+}: PageProps) {
+  const responsive = useResponsive()
   return (
     <>
       <div id="popup1" className="popup">
@@ -102,13 +132,17 @@ function Page() {
       </header>
       <div>
         <main>
-          <section id="mv">
+          <section
+            id="mv"
+            style={{
+              backgroundImage: responsive.pc ? `url(${mvBgPcPng})` : `url(${a5Png})`,
+            }}
+          >
             <div className="h1_con">
               <h1>
                 <picture>
                   <source srcSet={m0Png} media="(min-width: 811px)" />
                   <img
-                    fetchpriority="high"
                     decoding="async"
                     src={m0Png}
                     alt="老舗投資顧問「株マイスター」の新サービス 銘柄相談スパッと回答くんで株のお悩みを解決！ 累計会員数20万件以上 | サイト運営期間14年 | 銘柄相談件数10万件以上"
@@ -130,7 +164,7 @@ function Page() {
           </section>
           <section id="step">
             <h2>
-              高橋洋一
+              {personName}
               <br />
               保有株一発診断までの
               <br />
@@ -459,38 +493,19 @@ function Page() {
             />
           </section>
           <section id="about02">
-            <h2>株マイスターについて</h2>
+            <h2>{personTitle}</h2>
             <div className="about02_flex">
               <p>
                 <span>
-                  株マイスターは銘柄相談件数
-                  <br className="spOnly" />
-                  １０万件以上を誇る
-                  <br className="pcOnly" />
-                  老舗投資顧問
+                  {personDescription}
                 </span>
                 ですので、
                 <br className="spOnly" />
-                【銘柄相談スパッと回答くん】
-                <br className="pcOnly" />
-                では銘柄の概要や
-                <br className="spOnly" />
-                市場動向だけでなく、
-                <br className="pcOnly" />
-                これまでの知見を元に
-                <br className="spOnly" />
-                株価分析を含めた
-                <br className="pcOnly" />
-                売買のアドバイスまで
-                <br className="spOnly" />
-                させていただきます。
+                {companyIntro}
                 <br />
                 <br className="pcOnly" />
-                また、より具体的なご質問については
-                <br />
-                LINE上でお送りいただければ、
-                <br />
-                弊社アナリストがご回答させていただきます。
+                また、
+                {analystInfo}
               </p>
               <picture>
                 <img
@@ -528,7 +543,7 @@ function Page() {
                     <li>
                       <span className="txt_a">A.&nbsp;</span>
                       {' '}
-                      LINEで友だち追加していただき、「2024年急騰株」とメッセージを送っていただければ、無料でご利用いただけます！
+                      {howToUseAnswer}
                     </li>
                   </ul>
                 </div>

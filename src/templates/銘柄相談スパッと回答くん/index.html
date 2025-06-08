@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-  <meta name="format-detection" content="telephone=no" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta name="format-detection" content="telephone=no" />
   <meta name="format-detection" content="email=no" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -15,7 +16,7 @@
     <%= title %>
   </title>
   <script src="./static/jquery-3.7.1.min.js"></script>
-  <script th:replace="~{public/head}">
+  <script>
     const onLinkBtnClick = () => {
       const link = ""
       try { gtag_report_conversion(); } catch (error) { console.log(error) } finally { window.location.href = link; }

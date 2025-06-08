@@ -1,6 +1,6 @@
 import type { IApi } from 'umi'
 import { Buffer } from 'node:buffer'
-import { createCipher, createCipheriv, createHash } from 'node:crypto'
+import { createCipheriv } from 'node:crypto'
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
