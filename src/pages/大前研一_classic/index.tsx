@@ -10,23 +10,3 @@ export const config = {
 export default () => {
   return <Template name="大前 研一" motivationImage={motivationImage} teacherImage={teacherImage} schoolImage={schoolImage} />
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

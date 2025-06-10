@@ -1,35 +1,9 @@
 import type { IApi } from 'umi'
-import { Buffer } from 'node:buffer'
-import { createCipheriv } from 'node:crypto'
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
 import md5 from 'md5'
-
-// 将密码填充或截断到指定长度
-function padKey(key: string, length: number): Buffer {
-  const keyBuffer = Buffer.from(key, 'utf8')
-  if (keyBuffer.length === length) {
-    return keyBuffer
-  }
-  else if (keyBuffer.length < length) {
-    // 填充到指定长度
-    const paddedKey = Buffer.alloc(length)
-    keyBuffer.copy(paddedKey)
-    return paddedKey
-  }
-  else {
-    // 截断到指定长度
-    return keyBuffer.slice(0, length)
-  }
-}
-
-// 标准AES-ECB加密函数
-function encryptFlag(text: string): string {
-  const decipher = createCipheriv('aes-128-cbc', '1111111111111111', '1111111111111111')
-  decipher.setAutoPadding(true)
-  return decipher.update(text, 'utf-8', 'base64') + decipher.final('base64')
-}
+import { aesEncrypt } from '../src/utils/crypto'
 
 // 生成新文件名的方法
 function generateFileName(originalName: string, extension?: string): string {
@@ -56,22 +30,12 @@ export default (api: IApi) => {
     const flag = `${process.env.MPA_FILTER}_${process.env.KEY}_${Date.now()}`
 
     // 对flag进行对称加密，使用固定密码"leuan"
-    const encryptedFlag = encryptFlag(flag)
-
-    // 确保memo.mpa和memo.mpa.entry存在
-    if (!memo.mpa) {
-      memo.mpa = { entry: [{}] }
-    }
-    if (!memo.mpa.entry || memo.mpa.entry.length === 0) {
-      memo.mpa.entry = [{}]
-    }
-
-    memo.mpa.entry[0].flag = encryptedFlag
+    const encryptedFlag = aesEncrypt(flag)
+    memo.mpa!.entry[0]!.mountElementId = encryptedFlag || 'root'
 
     // 输出加密信息用于跟踪（使用允许的console.warn）
     console.warn(`🔐 Flag已加密: ${encryptedFlag}`)
     console.warn(`📝 原始Flag: ${flag}`)
-
     return memo
   })
 

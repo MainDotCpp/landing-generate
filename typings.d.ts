@@ -8,22 +8,5 @@ declare module '*.gif'
 declare module '*.bmp'
 declare module '*.tiff'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+declare const PAGE: string
+declare const KEY: string
