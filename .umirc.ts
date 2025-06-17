@@ -14,6 +14,7 @@ export default defineConfig({
     PAGE: process.env.MPA_FILTER,
     KEY: process.env.KEY,
     KEY_ENCRYPTED: aesEncrypt(process.env.KEY),
+    GA: process.argv[5] != undefined,
   },
   favicons: ['./static/favicon.ico'],
   publicPath: './',

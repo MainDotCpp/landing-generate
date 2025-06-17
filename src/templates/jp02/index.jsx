@@ -1,5 +1,4 @@
 import { redirect } from '@/utils/redicrect'
-import defaultSchoolImage from './static/2c9f2e41/static/picture/6336dae9-ba07-43fe-afc1-9ba86fc60eab.jpg'
 import ctaButtonImage from './static/2c9f2e41/static/picture/7839a379-d188-483d-b151-5e575490b0a9.png'
 import floatingButtonImage from './static/2c9f2e41/static/picture/button.png'
 import tuImage from './static/2c9f2e41/static/picture/TU.png'
@@ -27,7 +26,7 @@ function Page({
   name,
   motivationImage,
   teacherImage,
-  schoolImage = defaultSchoolImage,
+  schoolImage,
 }) {
   return (
     <>

@@ -1728,7 +1728,7 @@ main {
     text-align: center;
     border-radius: 5px;
     text-decoration: none;
-    animation: switch 2s ease-out infinite;
+    /* animation: switch 2s ease-out infinite; */
 }
 
 @keyframes switch {

@@ -10,3 +10,17 @@ declare module '*.tiff'
 
 declare const PAGE: string
 declare const KEY: string
+
+declare global {
+  const PAGE: string
+  const KEY: string
+  const KEY_ENCRYPTED: string
+  const onLinkBtnClick: () => void
+  interface Window {
+    umami: {
+      track: (event: string, data: Record<string, any>) => void
+    }
+  }
+}
+
+export {}

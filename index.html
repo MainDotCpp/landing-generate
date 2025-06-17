@@ -11,11 +11,16 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="theme-color" content="#000000" />
-  <title><%= title %></title>
+  <title>
+    <%= title %>
+  </title>
+  <!---------------------------⬇⬇⬇⬇跟踪代码粘贴在这里⬇⬇⬇⬇------------------------------------>
+  
+  <!---------------------------⬆⬆⬆⬆跟踪代码粘贴在这里⬆⬆⬆⬆----------------------------------->
   <script>
     const onLinkBtnClick = () => {
       const link = ""
-      try { gtag_report_conversion(); } catch (error) { console.log(error) } finally { window.location.href = link; }
+      try { gtag_report_conversion(link); } catch (error) { console.log(error); window.location.href = link; }
     }
   </script>
 </head>
