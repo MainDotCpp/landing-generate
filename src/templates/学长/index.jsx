@@ -18,7 +18,7 @@ function Page({
       </div>
       {/* 第一段文本 */}
       <div className="text-container">
-        <h1>最新の株式市場情報を共有する</h1>
+        <h1>{personName}</h1>
         <p>
           {introText}
         </p>
@@ -34,12 +34,15 @@ function Page({
           <img src={tuImage} alt="投資チャート" />
         </div>
         {/* 第二段文本覆盖在图片底部 */}
-        <div className="second-text-overlay">毎週、厳選した急騰銘柄3選を無料配信（利益期待度90%以上）</div>
+        <div className="second-text-overlay">
+          LINE追加をクリックして「7」を返信します
+        </div>
       </div>
       {/* 第二个按钮 */}
       <div className="second-button" onClick={redirect} style={{ textDecoration: 'none' }}>
         <img src={liImage} alt="LINE" />
-        先着50名限定！LINEで友達追加して無料情報をゲット
+
+        LINE追加をクリックして「7」を返信します
       </div>
     </div>
   )

@@ -1,15 +1,25 @@
 import { redirect } from '@/utils/redicrect'
+// 删除图片import，改为通过props接收
 import buttonImage from './static/b2-1400x282.png'
-import cs01Image from './static/cs01-1.jpg'
-import cs02Image from './static/cs02-1067x800.jpg'
-import cs03Image from './static/cs03.jpg'
-import cs04Image from './static/cs04.jpg'
-// 导入所有静态图片资源
+// import cs01Image from './static/cs01-1.jpg'
+// import cs02Image from './static/cs02-1067x800.jpg'
+// import cs03Image from './static/cs03.jpg'
+// import cs04Image from './static/cs04.jpg'
 import logoImage from './static/photo_2025-02-27_01-55-17.png'
 import './static/flatsome.css'
 import './styles.css'
 
-function Page() {
+function Page({
+  cs01Image,
+  cs02Image,
+  cs03Image,
+  cs04Image,
+  // 只提取包含人名的文本片段
+  personName = '藤野英人',
+  mainTitle = '累計利益100億円を達成した個人投資家・藤野英人2025年の目標、個人投資家へのアドバイスを公開',
+  personDescription = 'かつて「モノ言う株主」として知られた私、藤野英人が身をもって体験してきた「事実」です。',
+  sectionTitle = '藤野英人: 20年連続プラス収益達成の投資哲学',
+}) {
   return (
     <>
       <div id="wrapper">
@@ -79,7 +89,7 @@ function Page() {
               className="aos-init aos-animate"
             >
               <h2 className="uppercase">
-                累計利益100億円を達成した個人投資家・藤野英人2025年の目標、個人投資家へのアドバイスを公開
+                {mainTitle}
               </h2>
             </div>
             <div
@@ -104,7 +114,8 @@ function Page() {
                 本当に歴史的な1年でした。日経平均株価がバブル後の最高値を更新したのは、まさに私がかつて信じていた日本株の復活を証明してくれたようでした。私自身も、2025年2月に累計利益が100億円を突破。2023年末に日経平均先物を大量に買い増したのが功を奏しました。単年利益はこれで20年連続のプラスです。
                 <br />
                 <br />
-                日本企業の本質的な価値に注目し、正しい投資判断をすれば、マーケットは必ず応えてくれる——これは、かつて「モノ言う株主」として知られた私、藤野英人が身をもって体験してきた「事実」です。
+                日本企業の本質的な価値に注目し、正しい投資判断をすれば、マーケットは必ず応えてくれる——これは、
+                {personDescription}
                 <br />
                 <br />
                 今日は、私のファンや友人、そして日本株に可能性を感じているあなたに、株式市場で儲けるための「事実」と「コツ」を紹介します。
@@ -183,6 +194,7 @@ function Page() {
             <div
               className="img has-hover jump x md-x lg-x y md-y lg-y"
               id="image_593371238"
+              onClick={redirect}
             >
               <div className="img-inner dark">
                 <img
@@ -263,6 +275,7 @@ function Page() {
             <div
               className="img has-hover jump x md-x lg-x y md-y lg-y"
               id="image_1017081754"
+              onClick={redirect}
             >
               <div className="img-inner dark">
                 <img
@@ -281,7 +294,7 @@ function Page() {
               data-aos="fade-up"
             >
               <h2 className="uppercase">
-                藤野英人: 20年連続プラス収益達成の投資哲学
+                {sectionTitle}
               </h2>
               <div className="stock-stats">
                 <div
@@ -305,7 +318,7 @@ function Page() {
               </div>
               <div className="quote-block aos-init aos-animate" data-aos="fade-up">
                 「市場の本質を理解し、長期的な視点で投資することが、持続的な利益を生み出す鍵となります」-
-                藤野英人
+                {personName}
               </div>
             </div>
             <div

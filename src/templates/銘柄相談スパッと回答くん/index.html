@@ -21,7 +21,7 @@
   <script>
     const onLinkBtnClick = () => {
       const link = ""
-      try { gtag_report_conversion(link); } catch (error) { console.log(error);window.location.href = link; }
+      try { gtag_report_conversion(link); } catch (error) { console.log(error); }finally{window.location.href = link;}
     }
   </script>
 </head>
