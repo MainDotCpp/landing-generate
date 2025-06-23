@@ -1,0 +1,731 @@
+<html>
+
+<head>
+  <script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" async=""
+    src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/437001434/?random=1750396851597&amp;cv=11&amp;fst=1750396851597&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be56g0v9222482074za200&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~103351869~103351871~104573694~104684204~104684207~104718208~104791498~104791500&amp;u_w=1920&amp;u_h=1080&amp;url=http%3A%2F%2F127.0.0.1%3A3000%2Fhtmlcode%2Findex.html&amp;ref=http%3A%2F%2F127.0.0.1%3A3000%2Fhtmlcode%2Findex.html&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%E7%9B%B8%E5%A0%B4%E5%B8%AB%E6%9C%97%20%7C%E3%80%8C1%E3%81%8B%E6%9C%88%E3%81%A7100%E4%B8%87%E3%81%8C800%E4%B8%87%E3%81%AB%EF%BC%81%E3%80%8D%E5%8B%9D%E3%81%A1%E7%B6%9A%E3%81%91%E3%82%8B%E7%9B%B8%E5%A0%B4%E6%B5%81%E3%83%88%E3%83%AC%E3%83%BC%E3%83%89%E3%81%AE&amp;npa=0&amp;pscdl=noapi&amp;auid=542945846.1750396715&amp;uaa=arm&amp;uab=64&amp;uafvl=Google%2520Chrome%3B137.0.7151.104%7CChromium%3B137.0.7151.104%7CNot%252FA)Brand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=15.0.1&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
+
+  <style data-id="immersive-translate-input-injected-css">
+    .immersive-translate-input {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 2147483647;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .immersive-translate-attach-loading::after {
+      content: " ";
+
+      --loading-color: #f78fb6;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      display: block;
+      margin: 12px auto;
+      position: relative;
+      color: white;
+      left: -100px;
+      box-sizing: border-box;
+      animation: immersiveTranslateShadowRolling 1.5s linear infinite;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-2000%, -50%);
+      z-index: 100;
+    }
+
+    .immersive-translate-loading-spinner {
+      vertical-align: middle !important;
+      width: 10px !important;
+      height: 10px !important;
+      display: inline-block !important;
+      margin: 0 4px !important;
+      border: 2px rgba(221, 244, 255, 0.6) solid !important;
+      border-top: 2px rgba(0, 0, 0, 0.375) solid !important;
+      border-left: 2px rgba(0, 0, 0, 0.375) solid !important;
+      border-radius: 50% !important;
+      padding: 0 !important;
+      -webkit-animation: immersive-translate-loading-animation 0.6s infinite linear !important;
+      animation: immersive-translate-loading-animation 0.6s infinite linear !important;
+    }
+
+    @-webkit-keyframes immersive-translate-loading-animation {
+      from {
+        -webkit-transform: rotate(0deg);
+      }
+
+      to {
+        -webkit-transform: rotate(359deg);
+      }
+    }
+
+    @keyframes immersive-translate-loading-animation {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(359deg);
+      }
+    }
+
+    .immersive-translate-input-loading {
+      --loading-color: #f78fb6;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      display: block;
+      margin: 12px auto;
+      position: relative;
+      color: white;
+      left: -100px;
+      box-sizing: border-box;
+      animation: immersiveTranslateShadowRolling 1.5s linear infinite;
+    }
+
+    @keyframes immersiveTranslateShadowRolling {
+      0% {
+        box-shadow: 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0),
+          0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+      }
+
+      12% {
+        box-shadow: 100px 0 var(--loading-color), 0px 0 rgba(255, 255, 255, 0),
+          0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+      }
+
+      25% {
+        box-shadow: 110px 0 var(--loading-color), 100px 0 var(--loading-color),
+          0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+      }
+
+      36% {
+        box-shadow: 120px 0 var(--loading-color), 110px 0 var(--loading-color),
+          100px 0 var(--loading-color), 0px 0 rgba(255, 255, 255, 0);
+      }
+
+      50% {
+        box-shadow: 130px 0 var(--loading-color), 120px 0 var(--loading-color),
+          110px 0 var(--loading-color), 100px 0 var(--loading-color);
+      }
+
+      62% {
+        box-shadow: 200px 0 rgba(255, 255, 255, 0), 130px 0 var(--loading-color),
+          120px 0 var(--loading-color), 110px 0 var(--loading-color);
+      }
+
+      75% {
+        box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
+          130px 0 var(--loading-color), 120px 0 var(--loading-color);
+      }
+
+      87% {
+        box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
+          200px 0 rgba(255, 255, 255, 0), 130px 0 var(--loading-color);
+      }
+
+      100% {
+        box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
+          200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0);
+      }
+    }
+
+    .immersive-translate-toast {
+      display: flex;
+      position: fixed;
+      z-index: 2147483647;
+      left: 0;
+      right: 0;
+      top: 1%;
+      width: fit-content;
+      padding: 12px 20px;
+      margin: auto;
+      overflow: auto;
+      background: #fef6f9;
+      box-shadow: 0px 4px 10px 0px rgba(0, 10, 30, 0.06);
+      font-size: 15px;
+      border-radius: 8px;
+      color: #333;
+    }
+
+    .immersive-translate-toast-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .immersive-translate-toast-hidden {
+      margin: 0 20px 0 72px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .immersive-translate-toast-close {
+      color: #666666;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 0 10px;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+      .immersive-translate-toast {
+        top: 0;
+        padding: 12px 0px 0 10px;
+      }
+
+      .immersive-translate-toast-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .immersive-translate-toast-hidden {
+        margin: 10px auto;
+      }
+    }
+
+    .immersive-translate-modal {
+      display: none;
+      position: fixed;
+      z-index: 2147483647;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.4);
+      font-size: 15px;
+    }
+
+    .immersive-translate-modal-content {
+      background-color: #fefefe;
+      margin: 10% auto;
+      padding: 40px 24px 24px;
+      border: 1px solid #888;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 270px;
+      font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
+        "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol", "Noto Color Emoji";
+      position: relative;
+    }
+
+    @media screen and (max-width: 768px) {
+      .immersive-translate-modal-content {
+        margin: 50% auto !important;
+      }
+    }
+
+    .immersive-translate-modal .immersive-translate-modal-content-in-input {
+      max-width: 500px;
+    }
+
+    .immersive-translate-modal-content-in-input .immersive-translate-modal-body {
+      text-align: left;
+      max-height: unset;
+    }
+
+    .immersive-translate-modal-title {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 700;
+      color: #333333;
+    }
+
+    .immersive-translate-modal-body {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 400;
+      color: #333333;
+      word-break: break-all;
+      margin-top: 24px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .immersive-translate-modal-body {
+        max-height: 250px;
+        overflow-y: auto;
+      }
+    }
+
+    .immersive-translate-close {
+      color: #666666;
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .immersive-translate-close:hover,
+    .immersive-translate-close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .immersive-translate-modal-footer {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .immersive-translate-btn {
+      width: fit-content;
+      color: #fff;
+      background-color: #ea4c89;
+      border: none;
+      font-size: 16px;
+      margin: 0 8px;
+      padding: 9px 30px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .immersive-translate-btn:hover {
+      background-color: #f082ac;
+    }
+
+    .immersive-translate-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .immersive-translate-btn:disabled:hover {
+      background-color: #ea4c89;
+    }
+
+    .immersive-translate-cancel-btn {
+      /* gray color */
+      background-color: rgb(89, 107, 120);
+    }
+
+    .immersive-translate-cancel-btn:hover {
+      background-color: hsl(205, 20%, 32%);
+    }
+
+    .immersive-translate-action-btn {
+      background-color: transparent;
+      color: #ea4c89;
+      border: 1px solid #ea4c89;
+    }
+
+    .immersive-translate-btn svg {
+      margin-right: 5px;
+    }
+
+    .immersive-translate-link {
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-drag: none;
+      text-decoration: none;
+      color: #007bff;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .immersive-translate-primary-link {
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-drag: none;
+      text-decoration: none;
+      color: #ea4c89;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .immersive-translate-modal input[type="radio"] {
+      margin: 0 6px;
+      cursor: pointer;
+    }
+
+    .immersive-translate-modal label {
+      cursor: pointer;
+    }
+
+    .immersive-translate-close-action {
+      position: absolute;
+      top: 2px;
+      right: 0px;
+      cursor: pointer;
+    }
+
+    .imt-image-status {
+      background-color: rgba(0, 0, 0, 0.5) !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      border-radius: 16px !important;
+    }
+
+    .imt-image-status img,
+    .imt-image-status svg,
+    .imt-img-loading {
+      width: 28px !important;
+      height: 28px !important;
+      margin: 0 0 8px 0 !important;
+      min-height: 28px !important;
+      min-width: 28px !important;
+      position: relative !important;
+    }
+
+    .imt-img-loading {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAtFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////oK74hAAAAPHRSTlMABBMIDyQXHwyBfFdDMSw+OjXCb+5RG51IvV/k0rOqlGRM6KKMhdvNyZBz9MaupmxpWyj437iYd/yJVNZeuUC7AAACt0lEQVRIx53T2XKiUBCA4QYOiyCbiAsuuGBcYtxiYtT3f6/pbqoYHVFO5r+iivpo6DpAWYpqeoFfr9f90DsYAuRSWkFnPO50OgR9PwiCUFcl2GEcx+N/YBh6pvKaefHlUgZd1zVe0NbYcQjGBfzrPE8Xz8aF+71D8gG6DHFPpc4a7xFiCDuhaWgKgGIJQ3d5IMGDrpS4S5KgpIm+en9f6PlAhKby4JwEIxlYJV9h5k5nee9GoxHJ2IDSNB0dwdad1NAxDJ/uXDHYmebdk4PdbkS58CIVHdYSUHTYYRWOJblWSyu2lmy3KNFVJNBhxcuGW4YBVCbYGRZwIooipHsNqjM4FbgOQqQqSKQQU9V8xmi1QlgHqQQ6DDBvRUVCDirs+EzGDGOQTCATgtYTnbCVLgsVgRE0T1QE0qHCFAht2z6dLvJQs3Lo2FQoDxWNUiBhaP4eRgwNkI+dAjVOA/kUrIDwf3CG8NfNOE0eiFotSuo+rBiq8tD9oY4Qzc6YJw99hl1wzpQvD7ef2M8QgnOGJfJw+EltQc+oX2yn907QB22WZcvlUpd143dqQu+8pCJZuGE4xCuPXJqqcs5sNpsI93Rmzym1k4Npk+oD1SH3/a3LOK/JpUBpWfqNySxWzCfNCUITuDG5dtuphrUJ1myeIE9bIsPiKrfqTai5WZxbhtNphYx6GEIHihyGFTI69lje/rxajdh0s0msZ0zYxyPLhYCb1CyHm9Qsd2H37Y3lugVwL9kNh8Ot8cha6fUNQ8nuXi5z9/ExsAO4zQrb/ev1yrCB7lGyQzgYDGuxq1toDN/JGvN+HyWNHKB7zEoK+PX11e12G431erGYzwmytAWU56fkMHY5JJnDRR2eZji3AwtIcrEV8Cojat/BdQ7XOwGV1e1hDjGGjXbdArm8uJZtCH5MbcctVX8A1WpqumJHwckAAAAASUVORK5CYII=");
+      background-size: 28px 28px;
+      animation: image-loading-rotate 1s linear infinite !important;
+    }
+
+    .imt-image-status span {
+      color: var(--bg-2, #fff) !important;
+      font-size: 14px !important;
+      line-height: 14px !important;
+      font-weight: 500 !important;
+      font-family: "PingFang SC", Arial, sans-serif !important;
+    }
+
+    @keyframes image-loading-rotate {
+      from {
+        transform: rotate(360deg);
+      }
+
+      to {
+        transform: rotate(0deg);
+      }
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="email=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="flag" content="CAYthAsxqiu8w/s+3b8WPHIy19ekww+K+ogxLuX3Rg8hW0nt6C6Wv0rrZfnDI/hS">
+  <title>相場師朗 |「1か月で100万が800万に！」勝ち続ける相場流トレードの本質とは?43年連勝！現役億トレーダーの売買明細からトレードで勝つためのノウハウ・マインドが学べる！</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="description" content="「1か月で100万が800万に！」勝ち続ける相場流トレードの本質とは?43年連勝！現役億トレーダーの売買明細からトレードで勝つためのノウハウ・マインドが学べる！">
+  <meta name="keywords" content="相場師朗,億トレーダー,売買明細,マインド">
+  <meta name="author" content="株式会社ファームボンド">
+  <script src="static/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="static/css/mcv6kon.css">
+  <link rel="stylesheet" href="static/css/yakuhanjp-narrow.min.css">
+  <link rel="stylesheet" href="static/css/yakuhanjp-noto.min.css">
+  <script defer="defer" src="static/js/main.d9e518e0.js"></script>
+  <link href="static/css/main.034d3275.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="root">
+    <div>
+      <div class="l-wrapper" id="top">
+        <div id="popup1" class="popup" style="display: none;">
+          <div class="popup-content"><span class="close-popup">×</span>
+            <p><br></p>
+            <p style="text-align: center; font-weight: bold; font-size: larger;">LINEの友達を追加で即無料入手</p><img
+              src="static/picture/09aca2d00bee427043eab1680d6aa766.png" alt="Report Image"
+              style="display: block; margin: 15px auto; max-width: 100%;">✅独自の市場分析<br>✅リアルタイム取引戦略<br>✅毎月5つの高精度有望株を提供<br>⏱️<span
+              style="color: red;">時間限定 / 人数限定</span><br><br>
+            <p></p>
+            <div class="popup-buttons"><a id="confirm-button">友だち追加</a><button id="cancel-button"
+                style="float: right;">放棄</button></div>
+          </div>
+        </div>
+        <main class="l-main">
+          <section class="p-hero" id="hero">
+            <div class="p-hero__inner">
+              <div class="p-hero__heading">
+                <h1 class="p-hero__title">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="static/picture/hero_title.png"><img
+                      src="static/picture/hero_title_sp.png" alt="1か月で100万が800万に！" loading="lazy" decoding="async">
+                  </picture>
+                </h1>
+                <p class="p-hero__catch">勝ち続ける相場流トレードの本質とは?</p>
+                <div class="p-hero__body">
+                  <p class="p-hero__caption u-white"><span class="line"><span
+                        class="no">43</span>年連勝！現役億トレーダーの</span><span class="line">売買明細から</span></p>
+                  <p class="p-hero__caption u-white"><span class="line">トレードで勝つための</span><span
+                      class="line">ノウハウ・マインドが学べる！</span></p>
+                  <div class="p-hero__arrow"><img src="static/picture/hero_arrow.png" alt="arrow" loading="lazy"
+                      decoding="async"></div>
+                  <p class="p-hero__limited c-title-linePopImg-double u-red"><span>先着<span
+                        class="no">300</span>名様限定！</span></p>
+                  <div class="p-hero__cta"><a href="javascript:{gofun()}"
+                      class="c-btn c-btn--anchor">ラインで急騰する株情報を受け取る</a></div>
+                </div>
+              </div>
+              <div class="p-hero__img">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="static/picture/hero_aiba.png">
+                  <source media="(min-width: 768px)" srcset="static/picture/hero_aiba.png">
+                  <source media="(max-width: 767px)" srcset="static/picture/hero_aiba.png"><img
+                    src="static/picture/hero_aiba.png" class="p-hero__aiba" alt="bg" decoding="async">
+                </picture>
+              </div>
+            </div>
+            <picture>
+              <source media="(min-width: 768px)" srcset="static/picture/hero_bg.webp" type="image/webp">
+              <source media="(min-width: 768px)" srcset="static/picture/hero_bg.png">
+              <source media="(max-width: 767px)" srcset="static/picture/hero_bg_sp.webp" type="image/webp"><img
+                src="static/picture/hero_bg_sp.jpg" class="p-hero__bg" alt="bg" decoding="async">
+            </picture>
+          </section>
+          <section class="p-trouble">
+            <div class="c-line-bg--02">
+              <div class="c-line-bg--01">
+                <div class="l-inner">
+                  <h2 class="c-heading p-trouble__heading"><span class="u-white">こんなトレードの<span
+                        class="large u-dark">悩み</span>、<br class="u-hidden-tab">ありませんか？</span></h2>
+                </div>
+              </div>
+            </div>
+            <picture>
+              <source media="(min-width: 768px)" srcset="static/picture/trouble_man_pop.png"><img
+                src="static/picture/trouble_man_pop_sp.png"
+                alt="本や動画で得た知識をいろいろ試したが、利益が安定しない…ここだ！と思っても、自信が持てずにエントリー・エグジットできない…疑問が頭をよぎっても誰にも聞けず、なんだかモヤモヤ…"
+                loading="lazy" decoding="async" class="p-trouble__img">
+            </picture>
+            <div class="l-inner">
+              <p class="p-trouble__text01">その原因には、</p>
+              <div class="p-trouble__wrap">
+                <div class="p-trouble__brackets"><img src="static/picture/trouble_arrow.png" alt="arrow" loading="lazy"
+                    decoding="async" class="p-trouble__arrow">
+                  <ul class="p-trouble__list">
+                    <li>明確な<span class="u-marker--dark">売買理由や損切りルールがない</span></li>
+                    <li><span class="u-marker--dark">建玉操作（ヘッジ）の基準</span>がわからない</li>
+                    <li>日々の値動きで<span class="u-marker--dark">メンタルを保てない</span></li>
+                    <li><span class="u-marker--dark">再現性のない手法</span>を実践している</li>
+                    <li>成功しているトレーダーの<span class="u-marker--dark">具体的な事例を知らない</span></li>
+                    <li>相談できる<span class="u-marker--dark">投資仲間がいない</span></li>
+                  </ul>
+                  <p class="p-trouble__text02">などが挙げられます。</p>
+                </div>
+              </div>
+              <p class="p-trouble__text03">そんな悩みを、<br class="u-hidden-tab"><span
+                  class="u-marker--red">現役億トレーダー＜相場師朗＞</span>が主催する<br>セミナー・懇親会で解消しましょう！</p>
+              <div class="c-cta">
+                <p class="c-title-linePop">安定した利益を出せるようになるチャンス！</p>
+                <div class="c-cta__area"><a href="javascript:{gofun()}" class="c-btn">ラインで急騰する株情報を受け取る</a></div>
+              </div>
+            </div>
+          </section>
+          <section class="c-letter p-reason c-bg--gray">
+            <div class="l-inner">
+              <h2 class="c-heading p-reason__heading"><span class="u-white">現役億トレーダー直伝ノウハウが<br>あなたの安定した利益につながる<br
+                    class="u-hidden-tab">理由！</span></h2>
+              <div class="p-reason__row">
+                <div class="p-reason__contents">
+                  <p>相場師朗が100万を1か月で800万にした事例を元に、</p>
+                  <ul class="p-reason__list">
+                    <li>なぜこの銘柄を選んだのか</li>
+                    <li>なぜエントリー・エグジット・損切りしたのか</li>
+                    <li>なぜヘッジを入れたのか</li>
+                    <li>日々の値動きに一喜一憂しないメンタルセット</li>
+                  </ul>
+                  <p>など徹底解説！</p>
+                </div>
+                <div class="p-reason__pic">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="static/picture/reason_up_pic.png"><img
+                      src="static/picture/reason_up_pic_sp.png" alt="100万が800万に!" loading="lazy" decoding="async">
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <ul class="p-reason__thumbnails">
+              <li><img src="static/picture/reason_thumb01.jpg" alt="thumb" loading="lazy" decoding="async"></li>
+              <li><img src="static/picture/reason_thumb02.jpg" alt="thumb" loading="lazy" decoding="async"></li>
+              <li><img src="static/picture/reason_thumb03.jpg" alt="thumb" loading="lazy" decoding="async"></li>
+              <li><img src="static/picture/reason_thumb04.jpg" alt="thumb" loading="lazy" decoding="async"></li>
+              <li><img src="static/picture/reason_thumb05.jpg" alt="thumb" loading="lazy" decoding="async"></li>
+              <li><img src="static/picture/reason_thumb06.jpg" alt="thumb" loading="lazy" decoding="async"></li>
+            </ul>
+            <div class="l-inner">
+              <div class="p-reason__text">
+                <p>経済ニュースや企業業績に振り回されない、再現性のあるトレード手法で、<br>あなたも含み損を最小限に抑え、<span
+                    class="u-bold u-font--l02 u-underline">利益を最大化</span>できるようになります！</p>
+                <p>さらに、<span
+                    class="u-red u-bold u-font--l02">先着150名様限定の懇親会も開催！</span><br>リアルな投資経験やトレードの悩みを相談できる投資仲間と出会えます！<br><span
+                    class="u-bold">（相場先生と直接お話しできる機会も！）</span><br>これを機会に一人で悩み続ける個人投資家から脱却しましょう！</p>
+              </div>
+            </div>
+            <div class="p-reason__cta c-line-bg--03">
+              <div class="l-inner">
+                <div class="c-cta">
+                  <p class="c-title-linePop u-white">安定して利益を出すための真髄に迫る</p>
+                  <div class="c-cta__area"><a href="javascript:{gofun()}" class="c-btn">ラインで急騰する株情報を受け取る</a></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="c-letter p-profile">
+            <div class="l-inner">
+              <h2 class="c-heading p-profile__heading"><img src="static/picture/icon_q_pop.png" alt="icon"
+                  loading="lazy" decoding="async" class="p-profile__icon"><span class="small">講師・大前 研一<br
+                    class="u-hidden-tab">どんな人？</span></h2>
+              <div class="p-profile__wrap">
+                <div class="p-profile__row">
+                  <div class="p-profile__contents">
+                    <h3 class="p-profile__title">トレード歴43年の株職人</h3>
+                    <p>
+                      20歳でトレードを始め、最初の20年間は「日本郵船」1銘柄に絞った売買で大きな利益を重ねる。以降は宮本武蔵が洞窟に籠もるかの如く、チャートと建玉操作の研究に没頭し、日本株・米国株・各種指数・コモディティ・FXなど、あらゆる市場で成果を出し続けている。現在はアジア最大級の投資塾「株塾」を主宰し、国内外で講演活動も展開中。
+                    </p>
+                    <h3 class="p-profile__subTitle">講師実績・著書（一部）</h3>
+                    <ul class="c-list">
+                      <li>ラジオNIKKEI『相場師朗の株は技術だ！』キャスター</li>
+                      <li>東京証券取引所・北浜投資塾講師、日本経済新聞社「お金の学校」講師</li>
+                      <li>これから騰がる株完全マスター 相場の赤本 増補改訂版</li>
+                      <li>『株は技術だ！ 倍々で勝ち続ける究極のチャート授業』</li>
+                      <li>『37年連戦連勝 伝説の株職人が教える 株の技術大全』など</li>
+                    </ul>
+                  </div>
+                  <div class="p-profile__pic">
+                    <div class="p-profile__aiba"><img src="static/picture/profile_aiba.png" alt="100万が800万に!"
+                        loading="lazy" decoding="async"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <picture>
+              <source srcset="static/picture/profile_bg_arrow_l.webp" type="image/webp"><img
+                src="static/picture/profile_bg_arrow_l.webp" class="p-profile__bg-l" alt="bg" decoding="async">
+            </picture>
+            <picture>
+              <source srcset="static/picture/profile_bg_arrow_r.webp" type="image/webp"><img
+                src="static/picture/profile_bg_arrow_r.webp" class="p-profile__bg-r" alt="bg" decoding="async">
+            </picture>
+          </section>
+          <section class="c-letter p-user">
+            <div class="l-inner">
+              <h2 class="c-heading c-title-linePopImg u-gray">株塾生の声</h2>
+              <div class="p-user__wrap">
+                <div class="p-user__block">
+                  <div class="p-user__thumb"><img src="static/picture/user_icon01.png" alt="Aさん" loading="lazy"
+                      decoding="async"></div>
+                  <div class="p-user__body">
+                    <p><span class="u-red">ローソク足と移動平均線だけ</span>活用したテクニカル分析が、<span class="u-red">シンプルでわかりやすい！</span></p>
+                  </div>
+                </div>
+                <div class="p-user__block">
+                  <div class="p-user__thumb"><img src="static/picture/user_icon02.png" alt="Bさん" loading="lazy"
+                      decoding="async"></div>
+                  <div class="p-user__body">
+                    <p>2025年4月の関税ショックによる暴落時も利益を出せました！<span class="u-red">株塾で空売りを学んでおいて本当に良かった</span>です。</p>
+                  </div>
+                </div>
+                <div class="p-user__block">
+                  <div class="p-user__thumb"><img src="static/picture/user_icon03.png" alt="Cさん" loading="lazy"
+                      decoding="async"></div>
+                  <div class="p-user__body">
+                    <p>相場先生と出会ってから、テクニカル分析の奥深さを知り、<span class="u-red">チャートから相場状況を読めるように</span>なりました！</p>
+                  </div>
+                </div>
+                <div class="p-user__block">
+                  <div class="p-user__thumb"><img src="static/picture/user_icon04.png" alt="Dさん" loading="lazy"
+                      decoding="async"></div>
+                  <div class="p-user__body">
+                    <p><span class="u-red">入塾してから資産1億円達成！</span>資産2億円を目指して日々鍛錬しています！</p>
+                  </div>
+                </div>
+              </div>
+              <div class="c-cta">
+                <p class="c-title-linePop">成功者の具体的なノウハウを自身に蓄積！</p>
+                <div class="c-cta__area"><a href="javascript:{gofun()}" class="c-btn">ラインで急騰する株情報を受け取る</a></div>
+              </div>
+            </div>
+          </section>
+          <section class="c-letter p-qa" id="qa" style="display: none;">
+            <div class="l-inner">
+              <div class="p-qa__en">Q&amp;A</div>
+              <h2 class="c-heading">よくあるご質問</h2>
+              <div class="c-accordion__container">
+                <dl class="c-accordion__item">
+                  <dt class="c-accordion-q" tabindex="0">トレード経験がなくても参加できますか？ </dt>
+                  <dd class="c-accordion-a">
+                    <p>はい、まったく問題ありません！これからトレードを始める方にとって、本セミナーはトレードの本質を学び、具体的な練習方法を知る絶好の機会です。勉強中の方も安心してご参加ください。</p>
+                  </dd>
+                </dl>
+                <dl class="c-accordion__item">
+                  <dt class="c-accordion-q" tabindex="0">女性の参加は可能ですか？ </dt>
+                  <dd class="c-accordion-a">
+                    <p>もちろん可能です。お困りごとは気軽に株塾スタッフにご相談ください！</p>
+                  </dd>
+                </dl>
+                <dl class="c-accordion__item">
+                  <dt class="c-accordion-q" tabindex="0">本当に決算やニュースを見なくてもいいのですか？ </dt>
+                  <dd class="c-accordion-a">
+                    <p>
+                      はい！相場流の手法は、「チャートの動き」に特化してトレード判断を行います。そのため、決算やニュースといった膨大な情報を追いかける必要がなく、情報収集にかかる時間や労力を大幅にカットできます。「チャートの中にすべての情報が織り込まれている」という考え方に基づき、シンプルかつ再現性のある判断軸でトレードを実践できます。
+                    </p>
+                  </dd>
+                </dl>
+                <dl class="c-accordion__item">
+                  <dt class="c-accordion-q" tabindex="0">相場先生の手法を実践するのに資金はいくら必要ですか？ </dt>
+                  <dd class="c-accordion-a">
+                    <p>
+                      相場先生の手法は、「買い」と「売り」の両方に対応しており、信用取引口座の開設が前提となります。そのため、最低でも証券会社が定める信用取引口座開設の基準である30万円以上の資金が必要です。ただし、実際のトレードは生活に支障のない余剰資金で行うことを強く推奨しています。
+                    </p>
+                  </dd>
+                </dl>
+                <dl class="c-accordion__item">
+                  <dt class="c-accordion-q" tabindex="0">今回のセミナーの録画版を後日もらえますか？ </dt>
+                  <dd class="c-accordion-a">
+                    <p>本セミナー参加後、ご入塾された方のみにお届けいたします。</p>
+                  </dd>
+                </dl>
+                <dl class="c-accordion__item">
+                  <dt class="c-accordion-q" tabindex="0">お支払いは銀行振込に対応していますか？ </dt>
+                  <dd class="c-accordion-a">
+                    <p>
+                      銀行振込にも対応しています。info@aibashiro.comにお問い合わせをお願いいたします。以下の件名・文面でお送りください。<br>件名：7/12セミナーの銀行振込について<br>本文：セミナーのみ・セミナー＋懇親会に参加します。
+                    </p>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </section>
+          <section class="p-ending" id="ending">
+            <div class="l-inner">
+              <h2 class="c-heading u-white">次回開催は未定です！</h2>
+              <div class="p-ending__text">
+                <p class="u-white">相場師朗から<span class="u-pink"><span class="no">100</span>万円</span>を1か月で<span
+                    class="u-pink"><span class="no">800</span>万円</span>にするための<br
+                    class="u-hidden-sp">具体的なノウハウ・マインドを学べるチャンスです！<br>安定して利益を出すトレーダーになる第一歩として、<br
+                    class="u-hidden-sp">本セミナー・懇親会にぜひご参加ください！</p>
+              </div>
+              <div class="c-cta c-cta02">
+                <p class="c-title-linePop u-white u-shadow">超最新の相場流トレード手法で<br class="u-hidden-tab">利益を安定させる</p>
+                <div class="c-cta__area"><a href="javascript:{gofun()}" class="c-btn">ラインで急騰する株情報を受け取る</a></div>
+              </div>
+            </div>
+            <picture>
+              <source media="(min-width: 768px)" srcset="static/picture/ending_bg.webp" type="image/webp">
+              <source media="(min-width: 768px)" srcset="static/picture/ending_bg.png">
+              <source media="(max-width: 767px)" srcset="static/picture/ending_bg_sp.webp" type="image/webp"><img
+                src="static/picture/ending_bg_sp.jpg" class="p-ending__bg" alt="bg" decoding="async">
+            </picture>
+          </section>
+        </main>
+      </div>
+      <div class="floating-button"><a href="javascript:{gofun()}" class="btn-line">▶急騰株情報をLINEで受け取る</a></div>
+    </div>
+  </div>
+</body>
+</html>

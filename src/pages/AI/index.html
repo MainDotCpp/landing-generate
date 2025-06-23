@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!-- saved from url=(0127)https://haoyunkejint.cfd/?gad_source=1&gad_campaignid=22560318219&gclid=EAIaIQobChMI5vz6sce0jQMVV9wWBR2_xTSQEAMYASAAEgJVcfD_BwE -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株価分析-予測</title>
+    <link rel="stylesheet" href="./static/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: block;
+            min-height: 100vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+
+        .content {
+            text-align: center;
+            margin: 20px auto;
+            position: relative;
+            z-index: 1;
+            width: 90%;
+            max-width: 600px;
+            box-sizing: border-box;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #input-box {
+            margin-top: 20px;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            font-size: 16px;
+            border: 2px solid black;
+            border-radius: 20px;
+            transition: border-color 0.3s;
+            box-sizing: border-box;
+        }
+
+        #input-box.filled {
+            border: 5px solid green;
+        }
+
+        #disclaimer {
+            margin-top: 5px;
+            font-size: 12px;
+            color: grey;
+        }
+
+        #submit-button {
+            margin-top: 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        #submit-button img {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        #popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 0, 0.8);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+
+        #gif-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        #gif-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        #modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            border: 3px solid #0150c7;
+            border-radius: 20px;
+            padding: 20px;
+            width: 90%;
+            max-width: 400px;
+            z-index: 1100;
+            text-align: center;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            display: none;
+            box-sizing: border-box;
+        }
+
+        #modal-title {
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        #modal-content {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        #close-modal {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 25px;
+            height: 25px;
+            background: red;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 25px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #button2 {
+            margin-top: 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        #button2 img {
+            width: 100%;
+            max-width: 200px;
+        }
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1050;
+            display: none;
+        }
+    </style>
+
+
+</head>
+
+<body
+    style="background: url('./static/bg.jpg')  no-repeat center; background-attachment: fixed; background-size:cover; "
+    mpa-version="9.0.0" mpa-extension-id="ibefaeehajgcpooopoegkifhgecigeeg">
+    <div class="content">
+        <img src="./static/1.png" alt="Image 1">
+        <img src="./static/2.png" alt="Image 2">
+        <input type="text" id="input-box" placeholder="会社名または銘柄記号を入カしてくだ">
+        <div id="disclaimer">*お客様の取引情報は一切記録・使用されません。 <br>安全性を確保するため、情報はシステムに保存されず、第三者に提供されることもありません。</div>
+        <br>
+        <button id="submit-button">
+            <img src="./static/button2.jpg" alt="Button1">
+        </button>
+    </div>
+    <div id="popup" class="popup" style="display: none;">
+        <p>銘柄コードまたは名前を正しく入力してください</p>
+    </div>
+    <div id="gif-container" style="display: none;"></div>
+    <div id="modal" class="modal">
+        <span id="close-modal">×</span>
+        <div id="modal-title">株式AI分析が完了しました！</div>
+        <img src="./static/file2.png" alt="Report Image" style="display: block; margin: 15px auto; max-width: 100%;">
+        <div id="modal-content">
+            LINEの友達を追加し、<span style="color: red;">「レポート」</span>と送信して、すべての株式関連AI分析レポートを受け取りましょう。<br>
+            <strong>本日AIが推奨する最良の銘柄もお届けします！</strong>
+        </div>
+        <button id="button2" onclick="showline()">
+            <img src="./static/button2.png" alt="Button2">
+        </button>
+    </div>
+    <div id="overlay"></div>
+    <iframe allow="join-ad-interest-group" data-tagging-id="AW-16774246674" data-load-time="1747831614716" height="0"
+        width="0" src="./static/16774246674.html" style="display: none; visibility: hidden;"></iframe><iframe height="0"
+        width="0" style="display: none; visibility: hidden;" src="./static/saved_resource.html"></iframe>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const submitButton = document.getElementById("submit-button");
+            const inputBox = document.getElementById("input-box");
+            const gifContainer = document.getElementById("gif-container");
+            const modal = document.getElementById("modal");
+            const closeModal = document.getElementById("close-modal");
+            const button2 = document.getElementById("button2");
+            const popup = document.getElementById("popup");
+            const overlay = document.getElementById("overlay");
+
+            inputBox.addEventListener("input", function () {
+                if (inputBox.value.trim() !== "") {
+                    inputBox.classList.add("filled");
+                } else {
+                    inputBox.classList.remove("filled");
+                }
+            });
+
+            submitButton.addEventListener("click", function () {
+                if (inputBox.value.trim() === "") {
+                    popup.style.display = "block";
+                    setTimeout(() => {
+                        popup.style.display = "none";
+                    }, 2000);
+                } else {
+                    const gifImage = document.createElement("img");
+                    gifImage.src = "./static/analysed.gif";
+                    gifContainer.innerHTML = "";
+                    gifContainer.appendChild(gifImage);
+                    gifContainer.style.display = "block";
+
+                    setTimeout(() => {
+                        gifContainer.style.display = "none";
+                        overlay.style.display = "block";
+                        modal.style.display = "block";
+                    }, 2000); // assuming gif plays for 2 seconds
+                }
+            });
+
+            closeModal.addEventListener("click", function () {
+                modal.style.display = "none";
+                overlay.style.display = "none";
+            });
+        });
+    </script>
+</body>
+
+</html>

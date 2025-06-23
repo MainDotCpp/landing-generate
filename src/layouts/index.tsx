@@ -1,8 +1,10 @@
 import { useExternal } from 'ahooks'
+import AOS from 'aos'
+import ReactLenis, { useLenis } from 'lenis/react'
 import { useEffect } from 'react'
 import ReactGA from 'react-ga4'
+import 'aos/dist/aos.css'
 import './index.less'
-import '../../tailwind.css'
 
 // @ts-expect-error GA is defined
 if (GA) {
@@ -19,24 +21,27 @@ if (GA) {
 
 // mGbSqaPxSgmQXjYBhItCwg
 
+function aosInit() {
+  AOS.init({
+    duration: 1000,
+    once: true,
+  })
+}
+
+function initLenis() {
+  useLenis()
+}
+
 export default function Layout({ children }: { children: React.ReactNode }) {
-  // useEffect(() => {
-  //   const script = document.createElement('script')
-  //   script.src = 'https://umami.ddiwo.com/script.js'
-  //   script.async = true
-  //   script.dataset.websiteId = '5dbf4988-364b-455c-b69d-6976c26ef00f'
-  //   document.body.querySelector('main')?.appendChild(script)
-  //   window.addEventListener('load', () => {
-  //     window.umami.track('view', {
-  //       url: window.location.href,
-  //       title: document.title,
-  //       key: KEY_ENCRYPTED,
-  //     })
-  //   })
-  // }, [])
+  initLenis()
+  useEffect(() => {
+    aosInit()
+  }, [])
   return (
     <>
-      {children}
+      <ReactLenis root>
+        {children}
+      </ReactLenis>
     </>
   )
 }

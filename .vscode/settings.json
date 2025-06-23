@@ -94,7 +94,7 @@
     {
       "name": "haishi-web",
       "localPath": "/Volumes/ACASIS/100_Work/Haishi/landing-generate/www",
-      "remotePath": "root@Haishi:/www/wwwroot"
+      "remotePath": "root@Haishi16G:/www/wwwroot"
     }
   ],
   "git.ignoreLimitWarning": true

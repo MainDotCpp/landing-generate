@@ -27,7 +27,7 @@ export default (api: IApi) => {
   })
 
   api.modifyAppData((memo) => {
-    const flag = `${process.env.MPA_FILTER}_${process.env.KEY}_${Date.now()}`
+    const flag = `${process.env.MPA_FILTER}_${process.env.KEY}}`
 
     // 对flag进行对称加密，使用固定密码"leuan"
     const encryptedFlag = aesEncrypt(flag)

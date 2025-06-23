@@ -1,18 +1,18 @@
-import Template from '@/templates/学长/index'
+import Template from '@/templates/学长V2/index'
 import o_htdyImage from './static/htdy.jpg'
 import o_tuImage from './static/TU.png'
 
 export const config = {
-  title: '大前研一の戦略的投資法：グローバル視点で市場を制する',
+  title: '大前研一の投資の秘訣：初心者でも分かる市場分析',
 }
 export default () => {
   return (
     <Template
       personName="大前研一"
-      introText="大前研一のLINEを無料で追加して「7」と送信するだけで、明日上がる銘柄がわかります！LINEを追加するだけで、無料で情報を受け取ることができ、毎週30％の利益を約束する優良株も手に入ります。
+      introText="大前研一の公式LINEを追加して、限定の投資情報を手に入れましょう。「特別」とメッセージを送ると、厳選された推奨銘柄リストを無料でお届けします。毎週更新される市場分析で、賢い投資を始めましょう。
 
-今すぐ参加して、優良株をゲットしましょう！"
-      strategyButtonText="特別な投資情報をお届けします！"
+今すぐ登録して、富への第一歩を踏み出しましょう！"
+      strategyButtonText="限定情報を受け取る"
       htdyImage={o_htdyImage}
       tuImage={o_tuImage}
     />

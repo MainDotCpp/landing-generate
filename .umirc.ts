@@ -10,6 +10,7 @@ export default defineConfig({
     '@umijs/plugins/dist/tailwindcss',
     './plugins/mpa.ts',
   ],
+  publicPath: './',
   define: {
     PAGE: process.env.MPA_FILTER,
     KEY: process.env.KEY,
@@ -17,7 +18,6 @@ export default defineConfig({
     GA: process.argv[5] != undefined,
   },
   favicons: ['./static/favicon.ico'],
-  publicPath: './',
   hash: true,
   mpa: {
     template: 'index.html',

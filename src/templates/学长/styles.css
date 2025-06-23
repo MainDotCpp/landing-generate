@@ -1,192 +1,215 @@
-  /* 全局样式 */
-  body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #B3B1B1;
-      /* 背景颜色 */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      /* 全屏高度 */
-      box-sizing: border-box;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
-  /* 第一张图片容器 */
-  .image-container {
-      width: 96px;
-      height: 96px;
-      overflow: hidden;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 20px;
-      /* 图片与下一内容的间距 */
-  }
+/* 全局样式 */
+body {
+    font-family: 'Noto Sans JP', sans-serif; /* 使用 Noto Sans JP 字体 */
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7F7; /* 将背景改为米白色 */
+    /* 背景颜色 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* 全屏高度 */
+    box-sizing: border-box;
+}
 
-  .image-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-  }
+/* 第一张图片容器 */
+.image-container {
+    width: 96px;
+    height: 96px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    /* 图片与下一内容的间距 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 添加更柔和的阴影 */
+}
 
-  /* 第一段文本 */
-  .text-container {
-      text-align: center;
-      /* 容器居中 */
-      margin-bottom: 20px;
-      /* 文本与下一内容的间距 */
-      padding: 0 15px;
-      max-width: 600px;
-      /* 限制最大宽度 */
-      width: 90%;
-      /* 自适应宽度 */
-      word-wrap: break-word;
-      /* 自动换行 */
-      word-break: break-all;
-      /* 避免单词超出容器 */
-      overflow-wrap: break-word;
-      /* 确保换行 */
-  }
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-  .text-container h1 {
-      font-size: 24px;
-      margin-bottom: 10px;
-      color: #2c2c2c;
-      font-weight: bold;
-  }
+/* 第一段文本 */
+.text-container {
+    text-align: center;
+    /* 容器居中 */
+    margin-bottom: 20px;
+    /* 文本与下一内容的间距 */
+    padding: 0 15px;
+    max-width: 600px;
+    /* 限制最大宽度 */
+    width: 90%;
+    /* 自适应宽度 */
+    word-wrap: break-word;
+    /* 自动换行 */
+    word-break: break-all;
+    /* 避免单词超出容器 */
+    overflow-wrap: break-word;
+    /* 确保换行 */
+}
 
-  .text-container p {
-      font-size: 16px;
-      color: #2c2c2c;
-      line-height: 1.8;
-      font-weight: bold;
-      text-align: justify;
-      /* 设置文本两端对齐 */
-  }
+.text-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c2c2c;
+    font-weight: bold;
+}
 
-  /* 按钮样式 */
-  .button,
-  .second-button {
-      width: 90%;
-      /* 按钮宽度自适应屏幕 */
-      max-width: 600px;
-      margin-top: 20px;
-      padding: 16px;
-      font-size: 18px;
-      font-weight: bold;
-      background-color: white;
-      color: #333;
-      border: 2px solid #B3B1B1;
-      border-radius: 30px;
-      cursor: pointer;
-      text-align: center;
-      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
+.text-container p {
+    font-size: 16px;
+    color: #333333; /* 调整为深灰色，提高可读性 */
+    line-height: 1.8;
+    font-weight: bold;
+    text-align: justify;
+    /* 设置文本两端对齐 */
+}
 
-  .button:hover,
-  .second-button:hover {
-      background-color: #B3B1B1;
-      color: white;
-      border-color: white;
-  }
+/* 按钮样式 */
+.button {
+    width: 90%;
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #003366; /* 主要按钮颜色改为深蓝色 */
+    color: #FFFFFF; /* 文字颜色改为白色 */
+    border: none; /* 移除边框 */
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* 添加 transform 和 box-shadow 过渡 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* 调整阴影 */
+}
 
-  .button:active,
-  .second-button:active {
-      background-color: #B3B1B1;
-      color: white;
-      border-color: white;
-  }
+.second-button {
+    width: 90%;
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #06C755; /* LINE 按钮颜色改为绿色 */
+    color: #FFFFFF; /* 文字颜色改为白色 */
+    border: none; /* 移除边框 */
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* 添加 transform 和 box-shadow 过渡 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* 调整阴影 */
+}
 
-  /* 第二张图片容器 */
-  .second-image-container {
-      margin-top: 30px;
-      position: relative;
-      width: 90%;
-      /* 自适应宽度 */
-      max-width: 600px;
-  }
+.button:hover {
+    background-color: #0055A5; /* 悬停时颜色变亮 */
+    transform: translateY(-2px); /* 悬停时轻微上浮 */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* 悬停时阴影加深 */
+}
 
-  .second-image-container img {
-      width: 100%;
-      height: auto;
-      cursor: pointer;
-      border-radius: 10px;
-  }
+.second-button:hover {
+    background-color: #05A948; /* 悬停时颜色变亮 */
+    transform: translateY(-2px); /* 悬停时轻微上浮 */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* 悬停时阴影加深 */
+}
 
-  .second-text-overlay {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      font-size: 16px;
-      font-weight: bold;
-      text-align: left;
-      padding: 10px;
-      box-sizing: border-box;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
-  }
+.button:active,
+.second-button:active {
+    transform: translateY(1px); /* 点击时轻微下沉 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* 点击时阴影变浅 */
+}
 
-  /* 第二个按钮样式（含图标，文字居中对齐） */
-  .second-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      /* 居中对齐图标和文字 */
-      gap: 10px;
-      /* 图标和文字之间的间距 */
-      animation: pulse 2s infinite;
-  }
+/* 第二张图片容器 */
+.second-image-container {
+    margin-top: 30px;
+    position: relative;
+    width: 90%;
+    /* 自适应宽度 */
+    max-width: 600px;
+}
 
-  .second-button img {
-      width: 50px;
-      /* 图片更大，适合小屏幕观看 */
-      height: 50px;
-      border-radius: 50%;
-      /* 圆形图片 */
-      object-fit: cover;
-  }
+.second-image-container img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+}
 
-  /* 呼吸跳动动画 */
-  @keyframes pulse {
-      0% {
-          transform: scale(1);
-      }
+.second-text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
-      50% {
-          transform: scale(1.05);
-      }
+/* 第二个按钮样式（含图标，文字居中对齐） */
+.second-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 居中对齐图标和文字 */
+    gap: 10px;
+    /* 图标和文字之间的间距 */
+    animation: pulse 2s infinite;
+}
 
-      100% {
-          transform: scale(1);
-      }
-  }
+.second-button img {
+    width: 50px;
+    /* 图片更大，适合小屏幕观看 */
+    height: 50px;
+    border-radius: 50%;
+    /* 圆形图片 */
+    object-fit: cover;
+}
 
-  /* 自适应布局优化 */
-  @media (max-width: 768px) {
-      .text-container h1 {
-          font-size: 20px;
-      }
+/* 呼吸跳动动画 */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
 
-      .text-container p {
-          font-size: 14px;
-      }
+    50% {
+        transform: scale(1.05);
+    }
 
-      .button,
-      .second-button {
-          font-size: 16px;
-          padding: 14px;
-      }
+    100% {
+        transform: scale(1);
+    }
+}
 
-      .second-button img {
-          width: 40px;
-          height: 40px;
-      }
-  }
+/* 自适应布局优化 */
+@media (max-width: 768px) {
+    .text-container h1 {
+        font-size: 20px;
+    }
+
+    .text-container p {
+        font-size: 14px;
+    }
+
+    .button,
+    .second-button {
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    .second-button img {
+        width: 40px;
+        height: 40px;
+    }
+}

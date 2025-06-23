@@ -29,20 +29,17 @@ function Page({
       </div>
       {/* 第二张图片 */}
       <div className="second-image-container">
-        <div onClick={redirect}>
-          {/* 点击打开弹窗 */}
-          <img src={tuImage} alt="投資チャート" />
-        </div>
+        <img src={tuImage} alt="投資チャート" onClick={redirect} />
         {/* 第二段文本覆盖在图片底部 */}
         <div className="second-text-overlay">
-          LINE追加をクリックして「7」を返信します
+          LINE追加をロして「7」を返信します
         </div>
       </div>
       {/* 第二个按钮 */}
       <div className="second-button" onClick={redirect} style={{ textDecoration: 'none' }}>
         <img src={liImage} alt="LINE" />
 
-        LINE追加をクリックして「7」を返信します
+        LINE追加をロして「7」を返信します
       </div>
     </div>
   )

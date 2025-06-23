@@ -1,0 +1,90 @@
+﻿body { margin: 0; padding: 0; }
+@keyframes glowingEffect {
+    0% {
+        box-shadow: 0 0 8px 4px rgba(0, 255, 255, 0.6), 0 0 15px 8px rgba(0, 128, 255, 0.4), 0 0 20px 12px rgba(128, 0, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 8px 4px rgba(0, 128, 255, 0.6), 0 0 15px 8px rgba(128, 0, 255, 0.4), 0 0 20px 12px rgba(0, 255, 255, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 8px 4px rgba(128, 0, 255, 0.6), 0 0 15px 8px rgba(0, 255, 255, 0.4), 0 0 20px 12px rgba(0, 128, 255, 0.3);
+    }
+}
+
+#input-box {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    border: 2px solid transparent; /* è®¾ç½®ä¸ºé€æ˜Žä»¥çªå‡ºå‘å…‰æ•ˆæžœ */
+    border-radius: 20px; /* ä¿æŒåœ†è§’ */
+    box-sizing: border-box;
+    outline: none;
+    animation: glowingEffect 3s infinite alternate; /* åº”ç”¨å‘å…‰åŠ¨æ•ˆ */
+    transition: box-shadow 0.3s ease-in-out; /* å¹³æ»‘è¿‡æ¸¡åŠ¨æ•ˆ */
+}
+
+#button-container {
+    position: relative;
+    display: inline-block; /* ç¡®ä¿å®¹å™¨åŒ…è£¹æŒ‰é’®å¤§å° */
+    padding: 0;
+    margin-top: 20px;
+}
+
+#button-container::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, #ffffff, #ffffff, #8000ff);
+    border-radius: 25px;
+    z-index: -1;
+    filter: blur(8px);
+    animation: glowingEffect 3s linear infinite;
+}
+
+#submit-button {
+    position: relative;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    max-width: 300px;
+    border-radius:30px;
+    overflow: hidden;
+}
+
+#submit-button img {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#submit-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-30deg);
+    animation: sweep 3s infinite;
+}
+
+@keyframes sweep {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+    }
+}

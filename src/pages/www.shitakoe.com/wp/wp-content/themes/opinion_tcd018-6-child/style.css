@@ -1,0 +1,74 @@
+/*
+Theme Name: Opinion018-6 Child
+Template: opinion_tcd018-6
+Author: Design Plus
+Author URI: http://design-plus1.com/tcd-w/
+Description: WordPressãƒ†ãƒ¼ãƒžã€ŒOpinionã€
+Version: 4.10.2.1736266880
+Updated: 2025-01-08 01:21:19
+
+*/
+
+.home.blog {padding-bottom: 0;}
+
+@media screen and (min-width: 769px) {
+	#contents {max-width: 1150px; width: 100%; padding: 0; margin:0 auto 70px;}
+}
+@media screen and (max-width: 768px) {
+	#contents {width:100%;}
+}
+
+
+
+#main_col {float: none; margin: 0 auto;}
+
+@media screen and (min-width: 769px) {
+ 
+}
+@media screen and (max-width: 768px) {
+	#left_col {padding-top: 20px;}
+}
+@media screen and (max-width: 480px) {
+	#left_col {padding-top: 0;}
+}
+
+
+.footer-lower-link ul {display:none;}
+
+
+#bread_crumb {display:none;}
+#single_meta {background:none;}
+
+
+#main_col #right_col .side_widget {padding: 10px; border: 1px solid #333333; margin-bottom: 30px; background: none;}
+#main_col #right_col .side_widget h3.side_headline { margin: 0 -15px 15px; background: none; border-bottom: none;}
+#main_col #right_col .side_widget form select { width: 100%; padding: 10px; background: none; border: 1px solid #333333;}
+#main_col #right_col .side_widget form input[type="text"] { background: none; border: 1px solid #333333; border-radius: 4px;}
+#main_col #right_col .side_widget form input[type="submit"] {background: #333333; border-radius: 4px;}
+#main_col #right_col .side_widget #archives-dropdown-6 {width: 100%; padding: 10px; background: none; border: 1px solid #333333;}
+#main_col #right_col .side_widget #archives-dropdown-7 {width: 100%; padding: 10px; background: none; border: 1px solid #333333;}
+#main_col #right_col .side_widget #archives-dropdown-8 {width: 100%; padding: 10px; background: none; border: 1px solid #333333;}
+
+#main_col #right_col .side_widget ul li {margin-bottom: 0; padding: 15px 0; border-bottom: 1px solid #eeeeee;}
+#main_col #right_col .side_widget ul li:last-child {margin-bottom: 0; border-bottom: none;}
+
+.top-main-upper .cont-right #right_col {width: 350px; margin: 0px 0 0 0;}
+.top-main-upper .cont-right #right_col .widget_recent_entries {display: none;}
+.top-main-upper .cont-right #right_col .side_widget {margin-bottom: 29px;}
+.top-main-upper .cont-right #right_col .side_widget #archives-dropdown-8 {width: 100%; padding: 10px; background: none; border: 1px solid #333333;}
+.top-main-upper .cont-right #right_col .styled_post_list1_widget {height: 493px;}
+.top-main-upper .cont-right #right_col #styled_post_list1_widget-9 {height: 493px; margin-bottom: 0;}
+
+.top-section-wrap .inner .inbox .art-pl-block a .detail .txt-block p {margin-bottom: 0;}
+
+#related_post .headline2 { border: 1px solid #333333; border-bottom: none; background: none;}
+#related_post ul { border: 1px solid #333333; background: none;}
+#related_post li { border-right: 1px solid #333333;}
+
+.page-template #contents #main_col {margin: 30px auto;} 
+
+.page-template #contents #main_col .headline1 {padding: 0 5px; height: 60px; line-height: 50px; border-bottom: 1px solid #333333; border-left: none; border-top: none; border-right: none; font-size: 20px; letter-spacing: 1px; background: none; }
+.post h4 {border-left: 4px solid #0079c2; padding: 4px 0 0 5px;}
+
+/* archive */
+.archive #contents #main_col #left_col #post_list { background: none;}
