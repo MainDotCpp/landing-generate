@@ -150,7 +150,7 @@ if (str_starts_with($lang, 'ja')) {
     }
     
     // 如果是日本IP且usage_type为ISP，则放行
-    if (isset($countryCode) && $countryCode == 'JP' && isset($usageType) && $usageType == 'ISP') {
+    if (isset($countryCode) && $countryCode == 'JP' && isset($usageType) && ($usageType == 'ISP' || $usageType == 'MOB')) {
         $langDetection = "放行";
         $filename = "white.js";
     }

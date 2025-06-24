@@ -4,7 +4,7 @@ import './styles.css'
 
 function Page({
   personName = '本田健',
-  introText = '皆さん、こんにちは。本田健です。私は長年にわたり投資と資産運用の分野で活動し、多くの人々の経済的自立をサポートしてきました。私のファンや読者の皆さんに恩返しをするために、今日は株式市場で儲けるための「事実」と「コツ」を紹介しよう！日本市場は暴落が始まる…でも、それがチャンスだ！暴落こそが、富を築く最大のチャンス！',
+  introText,
   strategyButtonText = '本田健の「逆張り」投資戦略',
   htdyImage,
   tuImage,
@@ -18,11 +18,13 @@ function Page({
       {/* 第一段文本 */}
       <div className="text-container">
         <h1>{personName}</h1>
-        <p>
-          {introText}
-        </p>
+        {introText}
         {/* 第一个按钮 */}
-        <div className="button" onClick={redirect}>
+        <div
+          className="button"
+          onClick={redirect}
+          style={{ marginInline: 'auto', marginTop: '10px' }}
+        >
           {strategyButtonText}
         </div>
       </div>

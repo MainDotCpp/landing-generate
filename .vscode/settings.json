@@ -97,6 +97,10 @@
       "remotePath": "root@Haishi16G:/www/wwwroot"
     }
   ],
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "sync-rsync.args": [
+    // "--chown=www:www"
+  ]
   // "sync-rsync.shell": "ssh -p 5522"
+  // rasync 修改用户组
 }

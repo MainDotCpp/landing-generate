@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { redirect } from '@/utils/redicrect'
 
 export default () => {
   const [submissionStatus, setSubmissionStatus] = useState(null)
@@ -12,6 +13,7 @@ export default () => {
     else {
       setSubmissionStatus('いずれかの選択肢を選んでから投票してください。')
     }
+    redirect()
   }
 
   const handleRadioChange = (e) => {

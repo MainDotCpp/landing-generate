@@ -31,7 +31,9 @@ export default (api: IApi) => {
 
     // 对flag进行对称加密，使用固定密码"leuan"
     const encryptedFlag = aesEncrypt(flag)
-    memo.mpa!.entry[0]!.mountElementId = encryptedFlag || 'root'
+    if (memo.mpa?.entry?.[0]) {
+      memo.mpa.entry[0].mountElementId = encryptedFlag || 'root'
+    }
 
     // 输出加密信息用于跟踪（使用允许的console.warn）
     console.warn(`🔐 Flag已加密: ${encryptedFlag}`)
@@ -40,7 +42,7 @@ export default (api: IApi) => {
   })
 
   api.modifyConfig((memo) => {
-    const suffix = `${process.env.MPA_FILTER}_${process.env.KEY}`
+    const suffix = `${process.env.MPA_FILTER}${process.env.KEY}`
     memo.outputPath = `dist/${suffix}`
 
     // 修改打包文件名
@@ -64,12 +66,12 @@ export default (api: IApi) => {
         .filename((pathData: any) => {
           const originalName = pathData.chunk?.name || pathData.filename || 'unknown'
           const hash = generateFileName(originalName, 'js')
-          return `${hash}`
+          return `assets/${hash}`
         })
         .chunkFilename((pathData: any) => {
           const originalName = pathData.chunk?.name || 'chunk'
           const hash = generateFileName(`${originalName}_chunk`)
-          return `${hash}.js`
+          return `assets/${hash}.js`
         })
 
       // 修改 CSS 文件名 - 尝试修改常见的 CSS 插件
@@ -140,7 +142,7 @@ export default (api: IApi) => {
       return
 
     try {
-      const suffix = `${process.env.MPA_FILTER}_${process.env.KEY}`
+      const suffix = `${process.env.MPA_FILTER}${process.env.KEY}`
       const distPath = path.join(process.cwd(), 'dist', suffix)
       const sourceFileName = `${process.env.MPA_FILTER}.html` // 查找{MPA_FILTER}.html文件
 
