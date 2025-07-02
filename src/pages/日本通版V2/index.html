@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <title>高成長ポテンシャル株式</title>
+  <meta name="description" content="厳選された情報を毎日お届け。1,500以上のデータを分析し、判断をサポートします。">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!---------------------------⬇⬇⬇⬇跟踪代码粘贴在这里⬇⬇⬇⬇------------------------------------>
+
+  <!---------------------------⬆⬆⬆⬆跟踪代码粘贴在这里⬆⬆⬆⬆----------------------------------->
+  <script>
+    const onLinkBtnClick = () => {
+      const link = ""
+      try { gtag_report_conversion(link); } catch (error) { console.log(error); } finally { window.location.href = link; }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2b5f75",
+            secondary: "#3a5169",
+            accent: "#c73e3a",
+            washi: "#f5f0e6",
+            jpRed: "#c73e3a",
+            jpBlue: "#2b5f75",
+            jpGreen: "#5dac81"
+          },
+          fontFamily: {
+            sans: ['Noto Sans JP', 'sans-serif']
+          },
+          spacing: {
+            '18': '4.5rem'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .btn-jp {
+      border-radius: 9999px;
+      transition: all 0.2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-jp:active {
+      transform: scale(0.98);
+    }
+
+    .btn-jp:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+    }
+
+    .btn-jp:hover:after {
+      transform: translateX(0);
+    }
+
+    .feature-card {
+      transition: transform 0.2s ease;
+    }
+
+    .feature-card:active {
+      transform: scale(0.98);
+    }
+
+    .header-shadow {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .line-btn {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .modal-content {
+      animation: fadeIn 0.2s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+  <main id="<%= mountElementId %>"></main>
+</body>
+
+</html>

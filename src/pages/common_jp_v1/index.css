@@ -1,0 +1,73 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image:linear-gradient(120deg,#fdfbfb 0%, #ebedee 100%)
+}
+.container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width:525px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.img-box {
+    padding: 20px;
+}
+
+.text-box {
+    margin: 10px 30px;
+}
+
+.text-box p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    color: #333;
+}
+
+.highlight {
+    color: red;
+    font-weight: 900;
+    font-size: 18px;
+}
+.btn-box {
+    margin:20px;
+}
+.btn {
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.float {
+    max-width: 525px;
+    position: fixed;
+    bottom: 20px;
+    animation: breath 2s infinite;
+}
+
+@keyframes breath {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

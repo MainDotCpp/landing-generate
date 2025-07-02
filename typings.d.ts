@@ -15,7 +15,9 @@ declare global {
   const PAGE: string
   const KEY: string
   const KEY_ENCRYPTED: string
-  const onLinkBtnClick: () => void
+  const onLinkBtnClick: () => void | undefined
+  const gtag_report_conversion: (link: string | undefined) => void | undefined
+  const link: string | undefined
   interface Window {
     umami: {
       track: (event: string, data: Record<string, any>) => void

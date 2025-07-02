@@ -1,0 +1,1 @@
+chrome-extension://kodoloplfbnhlfcepehlafnbojbfgglb/content-script/consoleApi.js

@@ -100,6 +100,18 @@
   "git.ignoreLimitWarning": true,
   "sync-rsync.args": [
     // "--chown=www:www"
+  ],
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "108.160.138.123",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "JP16G",
+      "group": "Haishi",
+      "database": "fuckgoogle",
+      "username": "fuckgoogle"
+    }
   ]
   // "sync-rsync.shell": "ssh -p 5522"
   // rasync 修改用户组

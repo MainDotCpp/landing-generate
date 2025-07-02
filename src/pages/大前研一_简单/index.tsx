@@ -8,7 +8,7 @@ export const config = {
 export default () => {
   return (
     <Template
-      personName="大前 研一"
+      personName=""
       introText={(
         <div style={{ fontSize: '12px', textAlign: 'left' }}>
           <div>✅暴騰候補銘柄を毎日配信</div>

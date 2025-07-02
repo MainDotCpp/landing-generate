@@ -15,12 +15,8 @@ export function redirect() {
       console.error(error)
     }
   }
-  // window.umami.track('button_click', {
-  //   url: window.location.href,
-  //   title: document.title,
-  //   key: KEY_ENCRYPTED,
-  // })
-  onLinkBtnClick?.()
+
+  onLinkBtnClick()
 }
 export const redirectProps = {
   onClick: redirect,

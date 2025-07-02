@@ -32,14 +32,14 @@ function Page({
         <img src={tuImage} alt="投資チャート" onClick={redirect} />
         {/* 第二段文本覆盖在图片底部 */}
         <div className="second-text-overlay">
-          LINE追加をロして「7」を返信します
+          {personName}
         </div>
       </div>
       {/* 第二个按钮 */}
       <div className="second-button" onClick={redirect} style={{ textDecoration: 'none' }}>
         <img src={liImage} alt="LINE" />
 
-        LINE追加をロして「7」を返信します
+        LINE登録はこちらから
       </div>
     </div>
   )
