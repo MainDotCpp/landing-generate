@@ -14,7 +14,7 @@ export default () => {
       <div className="container">
         <img src={header} alt="header" className="header" />
         <article className="text">
-          大前研一のLINEを無料で追加し、「7」と送信するだけで、翌日上がる銘柄がわかります。さらに、毎週60％の利益が期待できる優良銘柄の情報も手に入れることができます。
+          大前研一のLINEを無料で追加し、「受取」と送信するだけで、翌日上がる銘柄がわかります。さらに、毎週60％の利益が期待できる優良銘柄の情報も手に入れることができます。
         </article>
         <p className="text-box">
           今すぐ参加して、優良株をゲ
@@ -24,11 +24,11 @@ export default () => {
         <img src={btn} alt="btn" className="btn" {...redirectProps} />
 
         <span class="text-box">
-          LINEを追加して「7」を送信する
+          LINEを追加して「受取」と送信する
           <br />
           と、最新の株価上昇ニュースを
           <br />
-          無料で入手できる！
+          無料で受け取れます！
         </span>
 
         <img src={img1} alt="img1" className="img1" />

@@ -33,15 +33,9 @@ function initLenis() {
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  initLenis()
-  useEffect(() => {
-    aosInit()
-  }, [])
   return (
     <>
-      <ReactLenis root>
-        {children}
-      </ReactLenis>
+      {children}
     </>
   )
 }

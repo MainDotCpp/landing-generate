@@ -1,0 +1,7 @@
+:root {
+  --pc-header-height: 64px;
+}
+
+.pageContainer {
+  --pc-header-height: 64px;
+}
