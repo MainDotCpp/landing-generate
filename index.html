@@ -20,7 +20,7 @@
   <script>
     const onLinkBtnClick = () => {
       const link = "https://www.baidu.com"
-      try { gtag_report_conversion(link); } catch (error) { console.log(error);  } finally {window.location.href = link;}
+      if (typeof gtag_report_conversion === 'function') {gtag_report_conversion(link);} else {window.location.href = link;}
     }
   </script>
 </head>
