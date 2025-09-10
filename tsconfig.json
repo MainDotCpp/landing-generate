@@ -1,4 +1,4 @@
 {
   "extends": "./src/.umi/tsconfig.json",
-  "include": ["typings.d.ts", "src"]
+  "include": ["typings.d.ts", "src", "src/pages/堀江贵文V17.0/.jsx"]
 }

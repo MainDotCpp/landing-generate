@@ -5,7 +5,7 @@ import img1 from './static/img.png'
 import './index.css'
 
 export const config = {
-  title: '三橋貴明',
+  title: '堀江貴文',
 }
 
 export default () => {
@@ -14,8 +14,8 @@ export default () => {
       <div className="container">
         <img src={header} alt="header" className="header" />
         <article className="text">
-          三橋貴明のLINEを無料で追加し、「受取」と送信するだけで、翌日株価が上がる銘柄がわかります。
-さらに、毎週300％の利益が期待できる優良銘柄の情報も手に入ります。
+          堀江貴文のLINEを無料で追加し、「受取」と送信するだけで、翌日株価が上がる銘柄がわかります。
+          さらに、毎週300％の利益が期待できる優良銘柄の情報も手に入ります。
         </article>
         <p className="text-box">
           今すぐ参加して、優良株をゲ
