@@ -14,7 +14,7 @@ export default () => {
             {/*   图片响应 */}
             <picture data-astro-cid-6hyyb7zl="">
               <img
-                src="/mjSFqQ/psh1_yugutit_2301_pc.BuQmM6cA_Z1Fbdha.webp"
+                src="/mjSFqQ/psh1_yugutit_2301_pc.BGuehz_z_ZmG1sY.webp"
                 alt=""
                 data-astro-cid-6hyyb7zl="true"
                 loading="lazy"
