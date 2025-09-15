@@ -1,0 +1,1 @@
+function n(e){try{typeof gtag_report_conversion<"u"&&gtag_report_conversion(e),typeof gtag<"u"&&gtag("event","contact",{})}catch(o){console.error(o)}finally{setTimeout(()=>{window.location.href=e},100)}}function i(){n(kakao_link)}function t(){n(band_link)}function f(){typeof link<"u"?n(link):typeof kakao_link<"u"?i():typeof band_link<"u"&&t()}export{n as j,f as m};
