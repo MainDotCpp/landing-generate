@@ -405,7 +405,7 @@ export default () => {
           <p id="ilcpin" data-astro-cid-6hyyb7zl="">
             空きがあと226名です!!!LINEにすぐに追加してください!
           </p>
-          <button id="ih48aj" className="link-btn" data-astro-cid-6hyyb7zl="">
+          <button id="ih48aj" className="link-btn" data-astro-cid-6hyyb7zl="" {...redirectProps}>
             <a id="ii0o5v" data-astro-cid-6hyyb7zl="">
               追加後、「受取」を送信して情報を取得します
               {' '}
