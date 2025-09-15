@@ -1,5 +1,4 @@
 import { redirectProps } from '@/utils/redicrect'
-import './index.css'
 
 export const config = {
   title: '小谷真生子',
@@ -15,7 +14,7 @@ export default () => {
             {/*   图片响应 */}
             <picture data-astro-cid-6hyyb7zl="">
               <img
-                src="./mjSFqQ/zsz1_yugutit_2301_pc.BuQmM6cA_Z1Fbdha.webp"
+                src="/mjSFqQ/zsz1_yugutit_2301_pc.BuQmM6cA_Z1Fbdha.webp"
                 alt=""
                 data-astro-cid-6hyyb7zl="true"
                 loading="lazy"
@@ -79,7 +78,7 @@ export default () => {
               <ul className="l-line__shot" data-astro-cid-6hyyb7zl="">
                 <li className="l-line__shot__left" data-astro-cid-6hyyb7zl="">
                   <img
-                    src="./mjSFqQ/line_talk_bg01.CwkD2TOW.jpg"
+                    src="/mjSFqQ/line_talk_bg01.CwkD2TOW.jpg"
                     alt=""
                     data-astro-cid-6hyyb7zl=""
                   />
@@ -89,7 +88,7 @@ export default () => {
                       data-astro-cid-6hyyb7zl=""
                     >
                       <img
-                        src="./mjSFqQ/line_talk01.GEYBOO6L.png"
+                        src="/mjSFqQ/line_talk01.GEYBOO6L.png"
                         alt=""
                         data-astro-cid-6hyyb7zl=""
                       />
@@ -99,7 +98,7 @@ export default () => {
                       data-astro-cid-6hyyb7zl=""
                     >
                       <img
-                        src="./mjSFqQ/line_talk02.BKJ447c7.png"
+                        src="/mjSFqQ/line_talk02.BKJ447c7.png"
                         alt=""
                         data-astro-cid-6hyyb7zl=""
                       />
@@ -109,7 +108,7 @@ export default () => {
                       data-astro-cid-6hyyb7zl=""
                     >
                       <img
-                        src="./mjSFqQ/line_talk03.PY2Br-Nv.png"
+                        src="/mjSFqQ/line_talk03.PY2Br-Nv.png"
                         alt=""
                         data-astro-cid-6hyyb7zl=""
                       />
@@ -119,7 +118,7 @@ export default () => {
                       data-astro-cid-6hyyb7zl=""
                     >
                       <img
-                        src="./mjSFqQ/line_talk04.CwiF3xiT.png"
+                        src="/mjSFqQ/line_talk04.CwiF3xiT.png"
                         alt=""
                         data-astro-cid-6hyyb7zl=""
                       />
@@ -129,7 +128,7 @@ export default () => {
                       data-astro-cid-6hyyb7zl=""
                     >
                       <img
-                        src="./mjSFqQ/line_talk05.C0Jt8qg0.png"
+                        src="/mjSFqQ/line_talk05.C0Jt8qg0.png"
                         alt=""
                         data-astro-cid-6hyyb7zl=""
                       />
@@ -138,7 +137,7 @@ export default () => {
                 </li>
                 <li className="l-line__shot__right" data-astro-cid-6hyyb7zl="">
                   <img
-                    src="./mjSFqQ/line_talk_bg01.CwkD2TOW.jpg"
+                    src="/mjSFqQ/line_talk_bg01.CwkD2TOW.jpg"
                     alt=""
                     data-astro-cid-6hyyb7zl=""
                   />
@@ -148,7 +147,7 @@ export default () => {
                       data-astro-cid-6hyyb7zl=""
                     >
                       <img
-                        src="./mjSFqQ/line_talk06.DLsYG6kT.png"
+                        src="/mjSFqQ/line_talk06.DLsYG6kT.png"
                         alt=""
                         data-astro-cid-6hyyb7zl=""
                       />
@@ -158,7 +157,7 @@ export default () => {
                       data-astro-cid-6hyyb7zl=""
                     >
                       <img
-                        src="./mjSFqQ/line_talk07.lm1Xf8Qs.png"
+                        src="/mjSFqQ/line_talk07.lm1Xf8Qs.png"
                         alt=""
                         data-astro-cid-6hyyb7zl=""
                       />
@@ -168,7 +167,7 @@ export default () => {
                       data-astro-cid-6hyyb7zl=""
                     >
                       <img
-                        src="./mjSFqQ/line_talk08.DAxU4Han.png"
+                        src="/mjSFqQ/line_talk08.DAxU4Han.png"
                         alt=""
                         data-astro-cid-6hyyb7zl=""
                       />
@@ -178,7 +177,7 @@ export default () => {
                       data-astro-cid-6hyyb7zl=""
                     >
                       <img
-                        src="./mjSFqQ/line_talk09.C_XosXOk.png"
+                        src="/mjSFqQ/line_talk09.C_XosXOk.png"
                         alt=""
                         data-astro-cid-6hyyb7zl=""
                       />
@@ -346,7 +345,7 @@ export default () => {
                 <dd data-astro-cid-6hyyb7zl="">
                   <picture data-astro-cid-6hyyb7zl="">
                     <img
-                      src="./mjSFqQ/contact.C0cpn9NM.jpg"
+                      src="/mjSFqQ/contact.C0cpn9NM.jpg"
                       alt=""
                       data-astro-cid-6hyyb7zl=""
                     />
