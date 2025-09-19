@@ -1,0 +1,217 @@
+  /* 所有原有樣式同上，略去不變部分 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 8px;
+      padding: 0;
+      background-color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .image-container {
+      width: 96px;
+      height: 96px;
+      overflow: hidden;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /*margin-bottom: 20px;*/
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .text-container {
+      text-align: center;
+      margin-bottom: 10px;
+      padding: 0 15px;
+      max-width: 600px;
+      width: 90%;
+      word-wrap: break-word;
+      word-break: break-all;
+      overflow-wrap: break-word;
+    }
+
+    .text-container h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #2c2c2c;
+      font-weight: bold;
+    }
+
+    .text-container p {
+      font-size: 16px;
+      color: #2c2c2c;
+      line-height: 1.8;
+      font-weight: bold;
+      text-align: justify;
+    }
+
+    .button,
+    .second-button {
+      width: 90%;
+      margin: 0 auto;
+      max-width: 600px;
+      /*margin-top: 20px;*/
+      padding: 16px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #ffa64d;
+      color: #ffffff;
+      border: 2px solid #ffa64d;
+      border-radius: 30px;
+      cursor: pointer;
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .button:hover,
+    .second-button:hover {
+      background-color: #ff9b37;
+      color: white;
+      border-color: white;
+    }
+
+    .button:active,
+    .second-button:active {
+      background-color: #ff9b37;
+      color: white;
+      border-color: white;
+    }
+
+    .second-image-container {
+      position: relative;
+      width: 90%;
+      max-width: 600px;
+      margin-bottom: 15px;
+    }
+
+    .second-image-container img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .second-text-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: left;
+      padding: 10px;
+      box-sizing: border-box;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .second-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      animation: pulse 2s infinite;
+    }
+
+    .second-button img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.05);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .text-container h1 {
+        font-size: 20px;
+      }
+
+      .text-container p {
+        font-size: 14px;
+      }
+
+      .button,
+      .second-button {
+        font-size: 16px;
+        padding: 6px;
+      }
+
+      .second-button img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .ys {
+      font-size: 14px;
+      margin-top: 2rem;
+      color: #000;
+      margin-bottom: 2rem;
+    }
+
+      .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 9999;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 600px;
+      position: relative;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .policy-content {
+      max-height: 60vh;
+      overflow-y: auto;
+      padding-right: 10px;
+    }
