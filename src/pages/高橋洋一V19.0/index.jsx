@@ -1,3 +1,4 @@
+import { redirectProps } from '@/utils/redicrect'
 import image1 from './static/picture/1.jpg'
 import image2 from './static/picture/2.png'
 import lineIcon from './static/picture/li.png'
@@ -20,14 +21,14 @@ export default () => {
         <p>✅ 高橋洋一の投資秘訣を無料で入手</p>
         <p>✅ 他の投資家がまだ知らない3銘柄を先取り</p>
         <p>⚡ 先着200名限定、チャンスは一瞬で終了</p>
-        <button className="button" onClick="onLinkBtnClick()">
+        <button className="button" {...redirectProps}>
           明日急騰株、無料で公開
         </button>
       </div>
       <div className="second-image-container">
-        <img src={image2} alt="" onClick="onLinkBtnClick()" />
+        <img src={image2} alt="" {...redirectProps} />
       </div>
-      <button className="second-button" onClick="onLinkBtnClick()">
+      <button className="second-button" {...redirectProps}>
         <img src={lineIcon} alt="" />
         👉 急騰株情報をLINEで受け取る
       </button>
