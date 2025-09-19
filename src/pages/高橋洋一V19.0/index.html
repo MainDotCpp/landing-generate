@@ -19,6 +19,7 @@
 </body>
 
 <script>
+document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('privacyModal');
   const closeBtn = document.querySelector('.close-btn');
   document.getElementById('privacyLink').addEventListener('click', (e) => {
@@ -36,5 +37,6 @@
       document.body.style.overflow = 'auto';
     }
   });
+});
 </script>
 </html>
