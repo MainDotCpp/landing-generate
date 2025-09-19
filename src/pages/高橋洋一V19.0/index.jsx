@@ -1,7 +1,7 @@
 import image1 from './static/picture/1.jpg'
 import image2 from './static/picture/2.png'
 import lineIcon from './static/picture/li.png'
-import './index.css'
+import './static/css/main.css'
 
 export const config = {
   title: '高橋洋一',
